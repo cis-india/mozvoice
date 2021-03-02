@@ -41,12 +41,12 @@ h3 {
 }
 .banner-image {
     width: 100%;
-    min-height: 800px;
-    max-height: 800px;
+    min-height: 400px;
+    max-height: 400px;
     overflow: hidden;
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
-    background-size: 1422px 800px;
+    background-size: 711px 400px;
     background-position: center top;
 }
 .site-title {
