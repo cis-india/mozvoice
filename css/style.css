@@ -9,7 +9,7 @@ a {
    border-bottom: 2px solid #262626;
    text-decoration: none;
 }
-a:hover, 
+a:hover,
 a:active {
    color: inherit;
    border-bottom: 2px solid #ea5077;
@@ -41,12 +41,12 @@ h3 {
 }
 .banner-image {
     width: 100%;
-    min-height: 800px;
-    max-height: 800px;
+    min-height: 1080px;
+    max-height: 1080px;
     overflow: hidden;
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
-    background-size: 1422px 800px;
+    background-size: 1800px 1080px;
     background-position: center top;
 }
 .site-title {
@@ -303,7 +303,7 @@ h3 {
     text-transform: uppercase;
 }
 .media a {
-    border-bottom: none; 
+    border-bottom: none;
     color: #333;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
@@ -311,7 +311,7 @@ h3 {
 }
 .media a:hover,
 .media a:active {
-    border-bottom: 2px solid #69c3aa; 
+    border-bottom: 2px solid #69c3aa;
     color: #333;
 }
 .media-mobile {
@@ -351,7 +351,7 @@ h3 {
     text-transform: uppercase;
 }
 .list a {
-    border-bottom: none; 
+    border-bottom: none;
     color: #333;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
@@ -360,7 +360,7 @@ h3 {
 }
 .list a:hover,
 .list a:active {
-    border-bottom: 2px solid #69c3aa; 
+    border-bottom: 2px solid #69c3aa;
     color: #333;
 }
 .slider{
