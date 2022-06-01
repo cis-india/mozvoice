@@ -35,355 +35,198 @@
       <div class="one wide column empty">
       </div>
       <div class="fourteen wide column text">
-        <h2>Design Brief</h2>
+        <h2>Voice Interfaces and Accessibility</h2>
       </div>
       <div class="one wide column empty">
       </div>
       <div class="one wide column empty">
       </div>
       <div class="nine wide column text">
-        <img src="img/DesignBrief.jpg"width="100%" style="margin: 15px 0 1px 0;" />
         <h3 id="Background">Background</h3>
-        <p>Given the increasing number of voice interface (VI) products in India, it is important to understand and analyse their design as part of the research and development of these technologies. In order to understand the challenges and opportunities in VI design, as well as to identify some best practices, we interviewed designers working with VIs.</p>
-        <p>The existing VI landscape comprises various actors, such as start-ups, global organisations, developers, policy-makers, and individuals using the VIs. Our mapping of actors in the VI industry suggests that a large number of the upcoming VI products in India are being developed by private companies.<sup class="superscript"><a href="#fn1">1</a></sup><a name="ref1"></a> In these companies, VI products are mostly conceptualised by developers, and designed by in-house teams. These teams include designers specialising in conversational design, and user interface (UI) and user experience (UX) design. Conversational experience design is still an emerging discipline in the country. It draws from human conversation patterns to make digital systems easy and intuitive to use.<sup class="superscript"><a href="#fn2">2</a></sup><a name="ref2"></a> The principles of conversational design can, therefore, be applied beyond voice assistants and chatbots to include all UI and web design.<sup class="superscript"><a href="#fn3">3</a></sup><a name="ref3"></a> However, in the case of most start-ups, the designers’ role and scope are based on the UI and UX design process.</p>
-        <p>Our primary methodology involved interviews with designers working independently or with developers, start-ups, and global organisations, as well as developers who make broad design decisions and work with designers. These designers and developers include Preeti Sheokand, a user experience designer who specialises in conversational design at Symphony AI;<sup class="superscript"><a href="#fn4">4</a></sup><a name="ref4"></a> Kumar Rangarajan and Vinayak Jhunjhunwala, co-founder and marketing associate, respectively, at Slang Labs;<sup class="superscript"><a href="#fn5">5</a></sup><a name="ref5"></a> Jai Nanavati, co-founder at Navana Tech;<sup class="superscript"><a href="#fn6">6</a></sup><a name="ref6"></a> Megan Branson, senior product designer at NVIDIA, formerly at Common Voice;<sup class="superscript"><a href="#fn7">7</a></sup><a name="ref7"></a> Akshay Kore, senior product designer at Observe.ai;<sup class="superscript"><a href="#fn8">8</a></sup><a name="ref8"></a> and Keshav Prawasi, co-founder at Niki.<sup class="superscript"><a href="#fn9">9</a></sup><a name="ref9"></a></p>
-        <p>In this study, we look at the design of VIs in India based on three key criteria: multi-language support, accessibility, and privacy. As VIs gain popularity in the country, developers have realised that multi-language support is the key to success with Indian audiences. The focus on multi-language support has been a business enabler for the VI landscape. It has opened up a new design space, with a shift in focus from metros to start-ups aiming at the ‘next billion users’.<sup class="superscript"><a href="#fn10">10</a>,</sup><a name="ref10"></a> <sup class="superscript"><a href="#fn11">11</a>,</sup><a name="ref11"></a> <sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a> However, developers have also identified challenges in supporting the numerous languages and dialects in India such as lack of language training data and technical expertise. Further, though VIs are globally recognised as accessibility tools for people with disabilities, at present, accessibility is not considered a primary objective for VI products in India. Instead, VIs are seen as tools to reach low-literacy individuals. In terms of privacy, the concerns around VIs usually focus on the device always listening for the ‘wake word’.<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a> There are no comprehensive guidelines on privacy standards for VIs. The design of VIs hence, also do not follow any specific privacy-preserving principles.</p>
-        <h3 id="VI design and development processes">VI design and development processes</h3>
-        <p>Over the course of our conversations with designers and companies, we observed that there is a largely standard process for the design and development of VIs. Based on the design thinking process, it comprises the broad steps of primary research, conversation-design modelling, testing, and refining.</p>
-        <h4 id="Primary research">Primary research</h4>
-        <p>Preeti Sheokand explained that her design process begins with secondary research on the domain and the context within which the VI product will operate. She then identifies the limitations or challenges present in the context – for example, the presence of a noisy environment. Further, she conducts primary research to understand the needs and context of the people who are going to use the VI. Based on this, she works out the intents of the VI, including its ‘hygiene intents’. An intent is the objective of the voice interaction or the individual’s intention.<sup class="superscript"><a href="#fn14">14</a></sup><a name="ref14"></a> The VI understands these intents and responds to them. ‘Hygiene intents’, as Preeti calls them, are interactions needed to accomplish the intent. For example, if the objective is to buy groceries, the hygiene intent would include signing up or signing into the platform, creating a profile, and selecting items for purchase.</p>
-        <p>Preeti observed that while technologists create synthetic conversations for development purposes, there is a lack of understanding of natural conversations. She addresses this using the training data collected during the primary research. She then extrapolates starting points based on this research. She then works on the conversation flows following UX and conversation-experience design principles. Preeti explained that conversational design, when using artificial intelligence (AI), is a probabilistic system and not a deterministic one. In a probabilistic system, the occurrence of events cannot be predicted perfectly.<sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a> The behaviour of such a system can be understood in terms of probability. A deterministic system, on the other hand, is one in which the occurrence of all events is known with certainty.<sup class="superscript"><a href="#fn16">16</a></sup><a name="ref16"></a> The VI may have multiple responses based on what the individual says and how the VI understands it. The various possibilities of how a VI system understands a phrase are determined by its technological limitations and the individual’s context. Hence, the conversation flows are decided for each of these possibilities or responses.</p>
-        <p>Our conversations with Navana Tech and Niki indicated that VIs are currently being envisioned for audiences with less experience with technology, and, hence, the initial design process revolves around capturing their interactions with existing platforms and assessing how they would potentially interact with VIs. Navana Tech has divided its audience into five literacy and technology cohorts by conducting tests to determine each segment.</p>
-        <p>The team at Niki too has significantly invested in primary research. Over the last three years, the team has spent about 30,000 hours talking to individuals using the Niki app. Keshav Prawasi informed us that Niki has a dedicated in-house customer insights and research team that consistently works towards understanding these individuals better. Their team of researchers, designers, and product managers has also travelled to Rajasthan and visited Tier 2, Tier 3, and other cities, like Chomu, Pushkar, Ajmer, and Udaipur, to conduct usability studies. They studied how people interact with platforms such as YouTube and WhatsApp. Further, they conducted hackathons, brainstormed for a few weeks, and recorded videos with people. They ideated multiple design concepts and finalised a few, based on which they built prototypes. They then tested specific use cases such as bill payment. They studied people’s interaction with the prototypes and further refined the design. Then they ran tests again to observe for which functions people relied more on voice. Finally, they made upgrades and changes to reflect these observations.</p>
-        <p>Kumar Rangarajan at Slang Labs described the user research that he conducted for product design with Srishti Manipal Institute of Art, Design, and Technology, Bengaluru. The design researchers worked with some apps that used touch and others that used speech. They spoke to more than 50 people, including some who are not well-versed with technology but who owned at least a smartphone. They asked shopkeepers and people on the streets and at bus stands how they would communicate to have a device perform a certain task. They also conducted more detailed, one to two-hour-long interviews with 10 people and observed them. They carried out primary research in English and Hindi. Then, they identified a use case and designed wireframes to test the flow of the interface. Like Preeti, Kumar also talked about considering the various intentions of the individuals using VIs, creating all possible conversation flows, and identifying different variables in these flows. He also spoke of expanding design details by adding various ways in which a primary use case, such as voice search, can be triggered while using the VI. Their focus is on ‘productising’ all the learnings from the research into their VI platform, so that businesses who integrate the VI do not need to start over.</p>
-        <h4 id="Understanding the context">Understanding the context</h4>
-        <p>Going deep into the design process, Akshay Kore, who has previously been part of the team working on the Microsoft Cortana interface, shared several insights. To begin, he shared some questions to consider while designing a VI. The first is whether a voice interface is appropriate to that particular context. To answer this, Akshay shared some advantages of VIs and contexts where it is suitable:</p>
-        <ul>
-          <li><p>The VI substitutes for a complex action or task that requires multiple clicks or steps. For example, setting an alarm requires multiple steps and is time-consuming, but through VI, it can be set using a single command.</p></li>
-          <li><p>When people are engaged in an activity where they cannot use their hands to access technology, voice becomes an important medium to interact with the device (for example, while driving or cooking).</p></li>
-          <li><p>Using VI does not require any added learning. People can ask the VI questions, and the VI can either answer the question or respond that it cannot understand or address the query.</p></li>
-          <li><p>Talking is more intuitive than other ways of interacting with technology. One can convey more through a VI than through a text-only interface, as other factors, such as tone, the difference between a question and an exclamation, and several emotions are conveyed more effectively through voice.</p></li>
-        </ul>
-        <p>Akshay also mentioned contexts that are inappropriate for VIs:</p>
-        <ul>
-        <li><p>In public spaces, it is difficult to use VIs due to the presence of noise.</p></li>
-        <li><p>If an application requires a lot of editing, using a VI is not advisable, as one cannot undo actions on VIs.</p></li>
-        <li><p>Individuals may not be comfortable sharing health-related information or other private details with a machine, especially if the VI is being used in a public space.</p></li>
-        </ul>
-        <p>Akshay reiterated Preeti’s idea of context – he suggested that the designer be aware of the context for which they are designing the VI. They should consider the surroundings of the individual, whether they are a beginner or an expert in using technology, and the type of device they are using (a device with a screen or a speaker or both). For example, when designing a healthcare-based VI, research may not be easily available as it comprises sensitive information, so the design process would need to involve several rounds of testing and feedback.</p>
-        <h4 id="Testing and refining">Testing and refining</h4>
-        <p>Megan Branson, former senior product designer at Common Voice (CV), mentioned that they applied design at a conceptual level. The project used an iterative process which involved repeated testing with people and refining the platform. The project began with identifying the need for large quantities of publicly available voice data that could be used to train speech-to-text engines. Design thinking exercises with Mozilla community members were conducted to ideate on creating an open-source voice dataset.<sup class="superscript"><a href="#fn17">17</a></sup><a name="ref17"></a> Megan created paper prototypes of design concepts and gathered feedback on them. The initial assumption was that people would need an ulterior motive to share voice data. However, their research revealed that most people were willing to donate voice data. The team also realised that people wanted to learn more about the need for voice data collection. Hence, they designed a platform whose predominant objective is collecting voice data.<sup class="superscript"><a href="#fn18">18</a></sup><a name="ref18"></a></p>
-        <p>In this initial iteration, CV developed an interactive model where people could ‘teach’ a robot to understand human speech by reading sentences to it.<sup class="superscript"><a href="#fn19">19</a></sup><a name="ref19"></a> This version intended “to tell the story of voice data and how it relates to the need for diversity and inclusivity in speech technology”.<sup class="superscript"><a href="#fn20">20</a></sup><a name="ref20"></a> The team then gathered community feedback and developed further iterations. Megan explained that they did a UX audit of the working prototype at this stage and made further refinements. Since 2017, they have focused on improving the platform – primarily improving the experience of contributing voice data. They also took UX heuristics, competitor evaluations, and community feedback into consideration.</p>
-        <p>Our interviews indicate that there is a strong emphasis on primary research to understand the needs of people from varying backgrounds. Most interviewees placed a lot of focus on understanding how people with less experience of technology, in both rural and urban settings, use VI. Many VI companies aim to provide reliable banking and fintech services for rural audiences. As there is little precedent for designing VIs in India, designers follow the established UI/UX path. Most designers working on VI products are UI/UX or product designers by training or experience and have only recently familiarised themselves with the nuances of conversational experience design.</p>
-        <h4 id="Conversation experience design">Conversation experience design</h4>
-        <p>Conversation design is only just emerging as a discipline and specialised practice in India.
-Designers and services have put together guidelines and principles of conversational design.<sup class="superscript"><a href="#fn21">21</a></sup><a name="ref21"></a> The core principles for conversation design in India were developed by Cathy Pearl in her book Designing Voice User Interfaces.<sup class="superscript"><a href="#fn22">22</a></sup><a name="ref22"></a> During his presentation on designing the best VI experiences, Vinayak Jhunjhunwala from Slang Labs talked about the best practices for conversation experience design based on Pearl’s book and other resources.</p>
-        <ul>
-        <li><p>Defining expectations using convention: In VI design, it is important to break away from existing conventions and unlearn previous digital behaviour.</p></li>
-        <li><p>Setting the right expectations: It is important to eliminate open-ended greetings and rhetorical questions from the design, as they are difficult to answer for the VI due to cognitive overload.</p></li>
-        <li><p>Discoverability: Elements should be easily accessible in the VI. For example, the individual should be able to discover the voice button and quickly understand how to use it.</p></li>
-        <li><p>Affordance: Vinayak emphasised that voice needs novel affordance strategies, such as audio prompting and adding visual depth to the interface.</p></li>
-        <li><p>Fail-safes: Fail-safes should be built into the interface to counter instances of when a phrase is not heard, or when it is heard incorrectly.</p></li>
-        <li><p>Use cases: He recommended picking common use cases, creating sample dialogues for each case, and testing them with different people. Sketching a voice user interface (VUI) flow diagram is another recommended technique.</p></li>
-        <li><p>Confirmations: There should be explicit audio confirmation of commands to assure the individual that the VI has understood the task.</p></li>
-        <li><p>Error Handling: VI needs to be designed to handle errors and latency in responses.</p></li>
-        </ul>
-        <p>Other principles in Pearl’s book include using conversational markers that let the individual know where they are in the conversation; adapting to the experience and expertise of novice and expert individuals keeping track of the context of the input; including a set of universals such as ‘repeat’, ‘main menu’, and ‘help’, at every stage; using audible or visual cues to communicate unavoidable system delays; designing experiences for accessibility; and prioritising personalisation over personality.<sup class="superscript"><a href="#fn23">33</a></sup><a name="ref23"></a></p>
-        <h3 id="Challenges in designing VUI">Challenges in designing VUI</h3>
-        <p>Some of the key challenges that designers faced were the poor memory of the VI; the need for multiple potential conversation flows; the need to handle errors; technological barriers; and a lack of language compatibility.</p>
+        <p>The World Wide Web Consortium’s (W3C) Web Accessibility Initiative provided a set of guidelines in 2008 and 2018 to make the internet more accessible. It also laid down the essential components of web accessibility, one of which is assistive technologies. This includes screen readers, alternative keyboards, switches, and scanning software.<sup class="superscript"><a href="#fn1">1</a></sup><a name="ref1"></a> Before the advent of consumer voice technologies, the most popular speech-based accessibility technologies were screen readers, which provide audio output for people with visual impairments, and speech dictation software, which provide a text-entry alternative to the keyboard.</p>
+        <p>The development of voice-enabled products provides the individual with the opportunity to apply speech inputs to more than just text dictation and screen reader software.<sup class="superscript"><a href="#fn2">2</a></sup><a name="ref2"></a> There has been very little research on how these applications can help people with various accessibility needs. The paucity of research could be due to the lack of funding or lack of interest from companies. Most accessibility studies focus on older adults and features such as emergency services, health monitoring, and light or temperature control. However, there has been little attention paid to how these technologies can be useful to persons with accessibility needs to perform different tasks. Despite the paucity of research, user reports show that voice-enabled devices and smart home appliances are being used by persons with disabilities (PwDs) to navigate their day-to-day activities based on speech inputs. This article explores how effective these technologies are as accessibility devices. For example, an interviewee in this study pointed out that these interfaces can be used to perform simple tasks (like relaying news or the weather) or to access entertainment (turning on YouTube or a music app), but were not effective in productivity apps (such as email dictation).</p>
+        <p>From an accessibility perspective, the adoption of voice interfaces (VIs) varies depending on the type of disability. Scholars opine that VIs were picked up as assistive technologies by persons who are visually impaired.<sup class="superscript"><a href="#fn3">3</a></sup><a name="ref3"></a> However, a significant challenge in the adoption of VIs as assistive technologies is its inability to assist deaf and hard of hearing (DHH) individuals. <sup class="superscript"><a href="#fn4">4</a></sup><a name="ref4"></a> In addition to the DHH community, older people who have debilitating conditions such as dementia,<sup class="superscript"><a href="#fn5">5</a></sup><a name="ref5"></a> and people who have speech disabilities,<sup class="superscript"><a href="#fn6">6</a></sup><a name="ref6"></a> find VIs difficult to use.</p>
+        <p>Despite these perceived limitations, Pradhan, A., et al. (2018)<sup class="superscript"><a href="#fn7">7</a></sup><a name="ref7"></a> conducted a qualitative study to ascertain the accessibility of VIs among PwDs<sup class="superscript"><a href="#fn8">8</a></sup><a name="ref8"></a> with visual, locomotor, and cognitive impairments. The researchers examined 346 customer reviews of off-the-shelf digital assistants, such as Amazon Echo, Echo Dot, and Tap, and found that 85.6% of them were positive. The study highlighted that the people were using the Amazon Echo not just for the known uses but also for unexpected purposes such as speech therapy and support for caregivers. However it also emphasised that the people faced some difficulty in discovering new features, as well as wished for a better voice-only application.</p>
+        <p>The next section seeks to provide a holistic overview of the opportunities and challenges that individuals with disabilities face while using VIs.</p>
+        <h3 id="Accessibility benefits and concerns">Accessibility benefits and concerns</h3>
+        <p>VIs can be beneficial to individuals who face difficulty in using text-only interfaces. Although there are multiple benefits of using VIs for performing simple to complex tasks, there is a need to look at creating devices that are universally accessible. This section will look at the benefits and concerns that come with deploying VIs as an accessibility feature for PwDs.</p>
+        <h4 id="Individuals with vision impairment or low vision">Individuals with vision impairment or low vision</h4>
+        <p>VIs have made it easier for visually impaired people to perform simple, commonplace tasks to a certain extent. An empirical study of 16 participants with vision impairments revealed that there were different types of tasks that digital voice assistants could complete.<sup class="superscript"><a href="#fn9">9</a></sup><a name="ref9"></a> According to the sample, they used digital voice assistants to play music, check the weather, set a timer, and listen to the news. On the other hand, playing games, shopping online, calling contacts, playing the radio, and reading books were less common.<sup class="superscript"><a href="#fn10">10</a></sup><a name="ref10"></a> Emerging trends in smart devices and smart home appliances, such as Ambient Assisted Living (AAL),<sup class="superscript"><a href="#fn11">11</a></sup><a name="ref11"></a> offer new opportunities for people to access services through voice. According to Rashidi and Mihailidis, “AAL technologies provide help with daily activities, based on monitoring activities of daily living (ADL) and issuing reminders, as well as helping with mobility and automation”.<sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a> Offshoots of AAL that utilise VIs include smart home technologies, mobile wearables or sensors, and assistive robotics, among others.<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a> In an empirical study, Vacher, et al. (2013) shed light on the usability of AAL for the visually impaired, the elderly, and people with no special needs. <sup class="superscript"><a href="#fn14">14</a></sup><a name="ref14"></a> They found that visually impaired participants favoured the adoption of smart home technologies, although they wished that they would render support for more complex tasks such as sending messages, emails or contacting emergency services.<sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a></p>
+        <h4 id="Individuals with locomotor disability">Individuals with locomotor disability</h4>
+        <p>Smart home appliances with VIs have the potential to be of assistance to individuals with locomotor or sensory-motor disabilities. Presently, individuals can control electronic devices and the locks of their homes through voice commands.<sup class="superscript"><a href="#fn16">16</a></sup><a name="ref16"></a> Another possible advantage of VIs is that they can be potentially used to control wheelchairs.<sup class="superscript"><a href="#fn17">17</a></sup><a name="ref17"></a> In addition, VIs such as the ‘listening keyboard’ enable locomotor-disabled individuals to provide voice inputs, rather than traditional text inputs, to their smartphones and desktops.<sup class="superscript"><a href="#fn18">18</a></sup><a name="ref18"></a> Research proves that a listening keyboard offers better functionality than a graphical user interface; the former has a 63% better error rate and a typing rate that is 74% better.<sup class="superscript"><a href="#fn19">19</a></sup><a name="ref19"></a> If developed along the same lines as the ‘listening keyboard’, voice commands can also help people with limited mobility control their desktop cursors.<sup class="superscript"><a href="#fn20">20</a></sup><a name="ref20"></a></p>
+        <h4 id="Individuals who are hard of hearing">Individuals who are hard of hearing</h4>
+        <p>Although VIs are beneficial for visually impaired and motor-impaired people , the primary accessibility challenge is for DHH individuals. According to Fok, et al., “as automatic speech recognition (ASR) systems are largely trained using speech from hearing individuals, speech-controlled technologies are typically inaccessible to deaf users”.<sup class="superscript"><a href="#fn21">21</a></sup><a name="ref21"></a> However, the outputs of some digital assistants for DHH individuals are also displayed as captions instead of voice. However, the subsequent problem with captions is that they become impossible for DHH individuals  who are not literate to interact with them.<sup class="superscript"><a href="#fn22">22</a></sup><a name="ref22"></a></p>
+        <p>A study revealed that a few individuals with hearing impairments who use digital assistants, faced difficulties in understanding voice outputs, although they did benefit from modifying the speech settings or pairing earphones.<sup class="superscript"><a href="#fn23">23</a></sup><a name="ref23"></a></p>
+        <p>In an attempt to explore alternative methods of using digital assistants, Rodolitz, et al. conducted an extensive study. The researchers considered the modality of using gesture control, as opposed to voice control, in a bid to use American Sign Language (ASL) instead of natural language in digital assistants.<sup class="superscript"><a href="#fn24">24</a></sup><a name="ref24"></a> Unfortunately, however, they found that with the current state of technology, it is unfeasible to use ASL to interact with digital assistants.<sup class="superscript"><a href="#fn25">25</a></sup><a name="ref25"></a></p>
+        <p>To summarise, the literature on VIs suggests that accessibility is often incorporated as an afterthought in these technologies.<sup class="superscript"><a href="#fn26">26</a></sup><a name="ref26"></a> Incorporating the needs of individuals with disabilities into the UX design process is the need of the hour.</p>
+        <h3 id="Policy schemes for accessibility">Policy schemes for accessibility</h3>
+        <p>There is a shortage of technical communication research on the design of spoken language devices.<sup class="superscript"><a href="#fn27">27</a></sup><a name="ref27"></a> This lack of research translates to a lack of established standards, which is a major challenge in voice-enabled device accessibility. Significant policies promulgated in the global context to overcome this challenge include the United Nations Convention on the Rights of Persons with Disabilities (CRPD) and the World Wide Web Consortium (W3C).</p>
+        <p>India has also ratified the CRPD, whose Article 9(1) reads, “To enable persons with disabilities to live independently and participate fully in all aspects of life, States Parties shall take appropriate measures to ensure persons with disabilities access”.<sup class="superscript"><a href="#fn28">28</a></sup><a name="ref28"></a> The CRPD Committee promotes the use of universal design, which encourages the development of products and services for all people without the need for specialised design.<sup class="superscript"><a href="#fn29">29</a></sup><a name="ref29"></a> Consequently, the Government of India formulated the National Policy on Universal Electronic Accessibility to ensure the adoption of universal design and accessibility standards in electronics and information and communication technologies (ICTs).<sup class="superscript"><a href="#fn30">30</a></sup><a name="ref30"></a></p>
+        <p>One of the primary aims for formulating the CRPD and the National Policy on Universal Electronic Accessibility is ensuring the democratisation of technology. This will be achievable if interfaces are designed to be more accessible and inclusive.<sup class="superscript"><a href="#fn31">31</a></sup><a name="ref31"></a></p>
       </div>
       <div class="one wide column empty">
       </div>
       <div class="four wide column meta">
-        <p><span id="grey">Research and Writing</span> Saumyaa Naidu<br />
-        <span id="grey">Research Assistance</span> Sweta Bisht, Deepika Nandagudi Srinivasa<br />
-        <span id="grey">Review and Editing</span> Shweta Mohandas, Puthiya Purayil Sneha, Divyank Katira<br />
+        <p><span id="grey">Research and Writing</span> Deepika Nandagudi Srinivasa, Shweta Mohandas<br />
+        <span id="grey">Review and Editing</span> Saumyaa Naidu, Puthiya Purayil Sneha, Pranav M.B<br />
         <span id="grey">Research Inputs</span> Sumandro Chattapadhyay<br />
 	<br />
-        <a href="docs/MozVoice_DesignBrief_02.pdf"><i class="fas fa-arrow-circle-down" style="color: black;" ></i> Download Design Brief</a></p>
+        <a href="docs/MozVoice_LitSurvey_Accessibility_01.pdf"><i class="fas fa-arrow-circle-down" style="color: black;" ></i> Download Literature Survey: Voice Interfaces and Accessibility</a></p>
         <br />
         <hr />
 	<br />
         <p><span style="line-height: 3em;">CONTENTS</span></p>
 	<p><a href="#background"><strong>Background</strong></a></p>
-        <p><a href="#VI design and development processes"><strong>VI design and development processes</strong></a></p>
-        <p><a href="#Primary research">Primary research</a></p>
-        <p><a href="#Understanding the context">Understanding the context</a></p>
-        <p><a href="#Testing and refining">Testing and refining</a></p>
-        <p><a href="#Conversation experience design">Conversation experience design</a></p>
-        <p><a href="#Challenges in designing VUI"><strong>Challenges in designing VUI</strong></a></p>
-        <p><a href="#Poor memory">Poor memory</a></p>
-        <p><a href="#Designing potential dialogues">Designing potential dialogues</a></p>
-        <p><a href="#Handling errors">Handling errors</a></p>
-        <p><a href="#Focus on technical approaches">Focus on technical approaches</a></p>
-        <p><a href="#Controlling or restricting content">Controlling or restricting content</a></p>
-        <p><a href="#Designing with optionality">Designing with optionality</a></p>
-        <p><a href="#Clarifying scope">Clarifying scope</a></p>
-        <p><a href="#Designing for multiple languages"><strong>Designing for multiple languages</strong></a></p>
-        <p><a href="#Using colloquial translations">Using colloquial translations</a></p>
-        <p><a href="#Support with iconography">Support with iconography</a></p>
-        <p><a href="#Crowdsourcing voice data">Crowdsourcing voice data</a></p>
-        <p><a href="#Designing for accessibility"><strong>Designing for accessibility</strong></a></p>
-        <p><a href="#Accessibility for Persons with Disabilities">Accessibility for Persons with Disabilities</a></p>
-        <p><a href="#Access and inclusivity">Access and inclusivity</a></p>
-        <p><a href="#Learnings from grassroot initiatives">Learnings from grassroot initiatives</a></p>
-        <p><a href="#Designing for privacy"><strong>Designing for privacy</strong></a></p>
-        <p><a href="#The future of VI design"><strong>The future of VI design</strong></a></p>
-        <p><a href="#Insights and further questions"><strong>Insights and further questions</strong></a></p>
+        <p><a href="#Accessibility benefits and concerns"><strong>Accessibility benefits and concerns</strong></a></p>
+        <p><a href="#Individuals with vision impairment or low vision">Individuals with vision impairment or low vision</a></p>
+        <p><a href="#Individuals with locomotor disability">Individuals with locomotor disability</a></p>
+        <p><a href="#Individuals who are hard of hearing">Individuals who are hard of hearing</a></p>
+        <p><a href="#Policy schemes for accessibility"><strong>Policy schemes for accessibility</strong></a></p>
+        <p><a href="#The future of accessible voice VIs"><strong>The future of accessible voice VIs</strong></a></p>
+        <p><a href="#Conclusion"><strong>Conclusion</strong></a></p>
       </div>
     </div>
     <div class="ui container three column stackable grid">
       <div class="one wide column empty">
       </div>
       <div class="nine wide column text">
-        <h4 id="Poor memory">Poor memory</h4>
-        <p>Akshay warned us that maintaining a record of previous interactions is a concern for VIs. While designing, it is important to ascertain what sort of memory the machine should have. This can be difficult to judge, as in some cases, multiple individuals may access the device. Products such as Amazon Echo are designed for the home setting, where there are multiple family members and activities.<sup class="superscript"><a href="#fn24">24</a></sup><a name="ref24"></a> But most voice assistants are designed to talk to one person at a time. The design challenge here is creating voice assistants that can address a group, know how many people are present, and be able to distinguish the situations and profiles of these individuals.<sup class="superscript"><a href="#fn25">25</a></sup><a name="ref25"></a> Akshay suggested that profiling the individuals talking to the device can enable it to provide contextual responses based on who is interacting with it. While it is not clear what this profiling would entail, it could mean differentiating individuals based on their speech patterns and/or voice biometrics.<sup class="superscript"><a href="#fn26">26</a></sup><a name="ref26"></a> This can then be used to build a history of their commands and identify and list their intent. However, voice profiling can have grave privacy implications, such as voice-based surveillance, targeted advertising, and the leakage of sensitive voice biometrics.<sup class="superscript"><a href="#fn27">37</a></sup><a name="ref27"></a></p>
-        <h4 id="Designing potential dialogues">Designing potential dialogues</h4>
-        <p>Akshay also stated that the information provided by the VI must be related to the conversational context. While humans understand this intuitively, automated responses may not always be appropriate. Niki also refers to this challenge as “bringing the individual back into the conversation”. Thus, it is necessary to write rigorously and design potential dialogues between the interface and the individual. As we mentioned earlier, VI uses probabilistic technology, which means there can be multiple responses in different contexts. For instance, how a VI interprets homophones such as ‘pair’ or ‘pear’ would depend on the context. In the case of a food delivery app, ‘pear’ takes precedence over ‘pair’. These potential dialogues must be designed to understand the questions accurately, respond appropriately, set the right expectation, and provide confirmation to the individual.</p>
-        <h4 id="Handling errors">Handling errors</h4>
-        <p>Many variables affect VIs – such as background noise and accents – and which make them less than perfect. Handling errors becomes significant when designing VIs. The accuracy of the device, or the confidence of output, as Akshay phrases it, is impacted by design and product thinking. </p>
-        <h4 id="Focus on technical approaches">Focus on technical approaches</h4>
-        <p>Preeti pointed out that the VI industry has only recently realised the value of UX. Most developers are not designing for experiences but for the completion of tasks. The interfaces are mostly created by people with technical expertise. Preeti suggested that it is critical, even from a business perspective, that one moves beyond this purely technical approach and starts looking at how individuals use VI. The focus should shift from data sets to studying use cases; the design process requires greater sensitivity towards the purpose and the audience and their comfort.</p>
-        <h4 id="Controlling or restricting content">Controlling or restricting content</h4>
-        <p>Preeti also emphasised the need to focus on accessibility, transparency, and ethical practice when designing VIs, as the applications are a lot more open-ended. To illustrate her point, she used the example of Alexa, where children may ask the device for information that their parents may not want them to know yet. While parental controls can be applied to visual content, controlling or restricting content on VIs is more challenging as identifying and differentiating between the individuals using the device is a complex operation.</p>
-        <h4 id="Designing with optionality">Designing with optionality</h4>
-        <p>Navana Tech’s co-founder, Jai Nanavati, also talked about the challenge of dealing with optionality in voice menus. He explained that although banking facilities can offer 20–30 service options, it is difficult for the individual to remember the options and effectively provide input to the VI. He suggests that a chat-based interface is more helpful in such a scenario. Effective VUIs should provide brief information and ask individuals if they want to hear more before offering additional options.<sup class="superscript"><a href="#fn28">28</a></sup><a name="ref28"></a> It is also important to allow individuals to request that information is repeated whenever they need it.<sup class="superscript"><a href="#fn29">29</a></sup><a name="ref29"></a></p>
-        <h4 id="Clarifying scope">Clarifying scope</h4>
-        <p>Kumar observed that while touch limits options to those on the screen, in the case of VI, the individual using it can say anything. Hence, when an individual says something that is beyond the scope of the VI, there needs to be some feedback to inform the individual that their request is out of the scope of the service.</p>
-        <p>Based on her experience designing the CV website, Megan talked about the difficulties in designing for responsiveness. She believes that accommodating a large amount of information in a small device or screen is even more challenging with the localisation of CV in various languages. She also saw this as a sign that CV is growing. The varied perspectives of multiple languages, the politics of language, and locale codes or language identifiers in computing have presented interesting pain points while working on the platform. Within linguistic communities themselves, the question of locale codes for specific languages on CV is a big discussion.</p>
-        <h3 id="Designing for multiple languages">Designing for multiple languages</h3>
-        <p>While most companies and designers recognise the need for multi-language support in VI products, most VIs lack regional language compatibility. According to Akshay, the predominant languages for VI in the country are English (US), English (UK), French, and English (India). He stated that as there is insufficient data to train regional language models, the accuracy of VIs in these Indian languages will be very low. Preeti recommended that language experts must understand the technology well, and technologists must be appreciative of more diverse language models. This will enable them to collaborate better and develop higher language adaptability. The Niki team also indicated the difficulty they faced in finding the right technical expertise to build language compatibility in VI.</p>
-        <h4 id="Using colloquial translations">Using colloquial translations</h4>
-        <p>Companies such as Niki and Navana Tech talked about conducting primary research on multiple-language use in languages including Hindi, Tamil, Kannada, Telugu, Oriya, Maithili, and Gujarati. The team at Niki claimed that like their technology, their design is scalable to multiple local languages. They do, however, recognise the challenges involved in adapting the app to local dialects. Before adding any new languages to Niki, the team familiarises themselves with the colloquial language used by the community in a specific region and for a specific use case. This helps them design responses according to the intent of the individuals using the app. Given the linguistic diversity of India, the biggest challenge that Niki faces is in hyper-localising conversations. The Niki team also realised from their focus group research that colloquial translations are more useful than literary ones. They aim to keep chat messages colloquial.</p>
-        <h4 id="Support with iconography">Support with iconography</h4>
-        <p>Jai mentioned that it is challenging to incorporate speech to text as the individual may speak in a combination of English and Hindi. He shared that Navana Tech uses a combination of audio files and illustrative iconography, as this enables the individual to understand the flow of the app better. He believes that audio files allow for more realistic engagement and are a near-necessity until text to speech becomes more natural-sounding. This also helps in language accessibility.</p>
-        <h4 id="Crowdsourcing voice data">Crowdsourcing voice data</h4>
-        <p>CV has attempted to address the lack of language data by crowdsourcing it. In her interview, Megan explained that CV began with English as the primary input language but it aims to eventually have diverse language inputs. The initial prototypes of the platform were tested in Taipei. Feedback from individuals whose first language is not English, but who wanted to contribute to the platform, made it clear that CV must be made available in more languages. The team designed a process by which individuals could contribute in their preferred language, instead of making the platform available in several arbitrary languages. The CV interface has a simple mechanism for choosing and adding languages. Further research by the team also revealed an audience for language preservation. Currently, CV is evolving to include lesser-known languages.</p>
-        <p>The CV team observed in its iterative design process that the quality of data collected needs to be more diverse in terms of gender, accent, dialect, and language. They organised an experience workshop to ideate on how to support multiple languages and improve the quality of voice data contributions.<sup class="superscript"><a href="#fn30">30</a></sup><a name="ref30"></a> Based on their learnings, they added dedicated language pages and community dashboards to the CV interface.</p>
-        <p>Our interviews also revealed that bigger consumer-based VI companies, like Amazon, Microsoft, and Google, are also considering including Indian languages. However, it is safe to assume that since the demographic of individuals using voice assistants and similar devices is likely to be English-speaking, it is easier for technology companies to continue catering to this consumer base by focusing solely on English.</p>
-        <h3 id="Designing for accessibility">Designing for accessibility</h3>
-        <h4 id="Accessibility for Persons with Disabilities">Accessibility for Persons with Disabilities</h4>
-        <p>While voice is considered useful for people with visual impairments and certain cognitive disabilities such as dyslexia,<sup class="superscript"><a href="#fn31">31</a></sup><a name="ref31"></a> there are several other disabilities that VI design processes do not fully account for. These include cognitive disabilities, hearing impairments, physical disabilities, and non-normative speech patterns. Most of the designers we interviewed emphasised this perspective. Akshay also added that the first VI ever launched was meant to address accessibility concerns.</p>
-        <p>Preeti, who has worked on the design of a voice-based scribe for people with visual impairments, mentioned that though the overall design process was similar to that of other VI products, the design research for the scribe project was more detailed. Her team prepared the questionnaire for their research after speaking to people with visual impairments. She mentioned the need to let go of existing biases while working on the project. The team tested the product by conducting examinations with people with visual impairments and low vision; this helped them understand all the possible interactions between the individual and the scribe. Preeti believes that voice is fundamentally useful for people with low vision and those with low digital literacy. She highlighted that so far, she has not come across further work on leveraging VIs for accessibility.</p>
-        <p>CV takes certain accessibility concerns into account when designing its platform interface. They analysed the CV website using Lighthouse,<sup class="superscript"><a href="#fn32">32</a></sup><a name="ref32"></a> an open-source, automated tool that audits for performance, accessibility, and search engine optimisation (SEO) on web pages. According to their Lighthouse score, their execution of colour contrast was not up to accessibility standards. They are now ensuring that their website matches these standards.</p>
-        <p>We noted that most developers and designers do not consider accessibility when conceptualising a VI product. Many VI apps use voice alongside visuals. These could be in the form of illustrations that suggest context or iconography that communicates options. Navana Tech shared the example of a voice-based banking app that uses icons to indicate options. They observed through their primary research that people needed further direction to navigate the audio-based app. The VI, therefore, uses icons as well as audio prompts for each button. The VI product created by Slang Labs is an added voice layer on an existing touch-based app. These products work well with the visual interface, and would not be as beneficial for the visually impaired as they do not operate on voice alone. Slang Labs also mentioned that by reducing the amount of screen-based interactions, they can help people who have motor disabilities like tremors.</p>
-        <h4 id="Access and inclusivity">Access and inclusivity</h4>
-        <p>Preeti emphasised the need for access, along with accessibility, for the elderly, and for people with low digital literacy. Access here is the overall inclusivity for varying groups of people while accessibility here is being referred to specifically for persons with disabilities.  There are also infrastructural concerns. The CV team also stressed the importance of the quality of the dataset. Large datasets are difficult to download, and they are working towards improving access. They are also working on creating a web app version of the website, which can be accessed on phones with lower connectivity, so that contributors can use it online and offline. It is evident that designers are identifying access concerns for people with low connectivity and low experience with technology; the elderly; and rural communities. However, many of these concerns are yet to be addressed in existing VIs. They still seem to be more popular with the English-speaking, mostly urban population – which is already well-versed with technology. While this focus on access is a welcome change among designers, there are clear gaps in their understanding of accessibility needs.</p>
-        <h4 id="Learnings from grassroot initiatives">Learnings from grassroot initiatives</h4>
-        <p>There are also key lessons to be learnt in the area of access from initiatives such as Avaaj Otalo and Gram Vaani, which have applied VI in rural India. These services have successfully used voice to increase the penetration of mobile phones even in the context of low literacy and internet access. We must note, however, that these initiatives are simpler, deterministic applications, and the probabilistic VI products currently in use face more complex training challenges.</p>
-        <p>Avaaj Otalo is a service developed in 2008 for farmers to access relevant and timely agricultural information over the phone.<sup class="superscript"><a href="#fn33">33</a></sup><a name="ref33"></a> Their team put together a set of guidelines for researchers designing VIs for developing regions. They recommend leveraging existing systems, ideating with people using the platform, and evaluating design choices empirically.<sup class="superscript"><a href="#fn34">34</a></sup><a name="ref34"></a> Putting their guidelines into action, Avaaj Otalo integrated with existing radio programmes and switched to explicit, directive-style prompting to avoid confusion.<sup class="superscript"><a href="#fn35">35</a></sup><a name="ref35"></a></p>
-        <p>Gram Vaani is a social tech company founded in 2008 at the Indian Institute of Technology (IIT), Delhi.<sup class="superscript"><a href="#fn36">36</a></sup><a name="ref36"></a> One of their services, Mobile Vaani, is a social media platform for social development in rural areas.<sup class="superscript"><a href="#fn37">37</a></sup><a name="ref37"></a> Mobile Vaani uses an interactive voice response (IVR) system that allows people to call a number and leave a message about their community or listen to messages left by others.<sup class="superscript"><a href="#fn38">38</a></sup><a name="ref38"></a> The platform allows communities to discuss wide-ranging issues on culture, local updates and announcements, and government schemes, and to share other information.</p>
-        <p>To design VIs that are inclusive, it is important to ensure that the training data used covers a diverse population, so that the quality of speech recognition is improved for everyone.<sup class="superscript"><a href="#fn39">39</a></sup><a name="ref39"></a> It is important to view accessibility as beneficial for everyone and not just one sub-group.<sup class="superscript"><a href="#fn40">40</a></sup><a name="ref40"></a> Taking into account the needs of individuals with visual impairment or low vision, voice interactions should be kept brief and must allow for interruptions. The application should let the individual control the speech rate. To address cognitive disabilities, a linear and time-efficient architecture is helpful. Important information should be placed at the beginning or end, and sufficient context should be provided. For individuals with hearing impairments, the VI should provide volume control and alternatives to speech-only interactions. Designers can also consider providing transcriptions of audio files or transmission to hearing devices. Physical disabilities can be addressed by enabling the VI to capture and understand broken or varying speech. Designers must include appropriate pauses in the VI’s listening. For people with non-normative speech patterns, designers must provide text-to-speech alternatives.<sup class="superscript"><a href="#fn41">41</a></sup><a name="ref41"></a></p>
-        <h3 id="Designing for privacy">Designing for privacy</h3>
-        <p>One of the most common privacy concerns with VIs is that the device might be always listening and collecting data. The designers we spoke with brought up this concern as well. Many devices, especially voice assistants, use ‘wake words’ (for example, ‘Hey Alexa’ or ‘Okay Google’) that invoke the VI. These devices are thus always on the lookout for this wake word. This is a concern if companies start recording and storing this data on the cloud. However, most companies assure users that they place the recording on the cloud and process it only when the ‘wake word’ is spoken. Before that, the data is stored locally on the device. This still raises questions regarding the retention of surplus data and safeguards against leaks and sharing. One of our interviewees pointed out that many privacy implications are dependent on the design of the system architecture. For example, for Google Pixel devices, all the processing happens within the device, and no data is uploaded to the cloud. However, Google’s intention behind this was not to safeguard privacy but to optimise the processing of data as it becomes much faster compared to cloud-processing devices. In 2019, there were reports that Apple was sharing a portion of the recordings from Siri with its contractors for quality control.<sup class="superscript"><a href="#fn42">42</a></sup><a name="ref42"></a> Following this controversy, Apple updated its policy to allow people to opt into sharing audio samples of their requests to train Siri.<sup class="superscript"><a href="#fn43">43</a></sup><a name="ref43"></a></p>
-        <p>While discussing privacy in CV, Megan spoke about the need to be transparent about how the platform is utilising the information collected. She mentioned that the dashboard helps contributors control who can see their profiles. They can hide their visibility from others on the platform. The website has been created to be as malleable as possible when it comes to contributors’ interactions with it. Contributors do not need to necessarily have a profile to contribute voice data. The terms and conditions agreement states that the data is being collected for research and that personal information in the form of their voices is being collected by the website.</p>
-        <p>Preeti affirmed that while she has not seen training data that reveals an individual’s identity so far people should still be aware that their voice data is being processed and utilised. This is especially essential for people who do not have a lot of experience with technology and lack trust in digital services. Preeti explained this through the example of an elderly person who finds it difficult to trust online banking and hence would be unable to use a VI to access it. She spoke about the importance of notice and consent, transparency, and opt-outs. Another interviewee also made a critical point regarding notices. While voice-only devices are always listening, they do not indicate that they are listening, in contrast to webcams, which clearly indicate – through a flash next to the lens – that they are turned on. Likewise, there needs to be a similar kind of indication in VI devices. Companies such as Amazon and Google reassure people that their devices are not violating privacy – but they also do not provide any indications of continued listening.</p>
-        <p>Another key insight that Preeti pointed out concerned designing privacy notices for voice-based products. She highlighted that communicating a privacy notice through voice could be difficult, and suggested that in such cases, there needs to be an option to view the notice as text. Designing text-based privacy notices is a challenge due to the complexity and length of these texts. Even a textual notice is difficult to access and understand.<sup class="superscript"><a href="#fn44">44</a></sup><a name="ref44"></a> Moreover, communicating a privacy notice is difficult if the device does not have a screen or if it is entirely voice-based. Taking consent verbally is another complicated design task, as the quality of consent will vary depending on the use of voice biometrics, the quality and volume of audio input, and environmental noise.<sup class="superscript"><a href="#fn45">45</a></sup><a name="ref45"></a> Preeti called for an increase in overall sensitivity about data collection and use among people. She proposed an opt-out for people who do not want their data to be used for training and development purposes, while recognising that this could lead to difficulties in sourcing data for research.</p>
-        <p>Preeti remarked on larger design patterns in the voice industry: she believes that at present, the issue of privacy does not receive enough focus, and most VI companies still do not consider privacy at the conceptualisation stage. She feels the industry is still struggling to create a working system, and so privacy concerns are relegated to the end of the design process. She asserted that early conceptualisation on privacy is extremely relevant, and design is best placed to enforce and create awareness about both accessibility and ethical practices. She also pointed out the lack of guidelines for VI design. Many designers are also not familiar with data practices, privacy policies, and data protection laws. The design of privacy notices, and other elements in the interface, do not account for transparency of data collection, storage, and use. It is imperative to place VI design practice in an ethical framework and focus on privacy and transparency while designing.</p>
-        <p>Besides the policy interventions necessary to enhance privacy in VI products and services, privacy can be addressed through the interface design of VI products.<sup class="superscript"><a href="#fn46">46</a></sup><a name="ref46"></a> Designers need to provide explicit opt-ins along with enhanced notices at the time of setting up voice features. These features should not be pre-enabled. A hard ‘off’ switch should be available to eliminate the possibility of the device activating at inconvenient or unintended times. Creators can use prominent visual cues to practise informed consent by notifying people when a device is on and recording.</p>
-        <h3 id="The future of VI design">The future of VI design</h3>
-        <p>According to Akshay, voice is just one more modality through which we interact with devices. According to him, enhanced adaptability in a VI depends on the context of the device. VIs can be more enabling for people who are not well-versed with technology. If companies begin to give importance to multi-language support, they could boost the reach of this technology. Preeti believes that VIs are going to become more and more relevant in the future. She foresees an initial phase of possible friction, but as familiarity with the technology increases, VIs will become more mainstream. She predicts that people who are not digitally literate – such as the elderly – will become the primary users of voice. VI is also likely to reduce the accessibility gap for people with disabilities.</p>
-        <p>Megan also speculated about the future of the CV website if it were to adopt voice-activated interaction as opposed to its current touch or point-and-click-based interface. The CV team feels that it is important to enable some sort of voice detection in the website, as this will allow for recordings to be more succinct and accurate. People will then be able to donate recordings of their own voices. The team could collect voice data to tune voice recognition on the platform as well. Speaking of the future of VI, Megan observed that soon there will be a homogenisation of VIs as has been the case with visual interfaces. She mentioned that this homogenisation is already underway with the use of wake words in all voice assistants. She wonders if the open-source data on CV can make this homogenisation look different. She believes that it can allow people to compete against the idea of what voice interfaces should look like. Megan also made a critical recommendation that designers integrate ethical practices for voice at an early stage. UI/UX has already become established, but VI is still new, and the ethical foundations can be laid early in collaboration with designers.</p>
-        <h3 id="Insights and further questions">Insights and further questions</h3>
-        <p>Voice is projected to be a time-saving alternative to touch-based interfaces. It is often pitched as a tool for people who cannot type or read. But present applications of VI do not demonstrably bridge the gap of access and inclusivity for marginalised and vulnerable communities. As the design processes of various VI products suggest, the homogenisation of voice-based products is already underway. It is important for design to break the ‘templatisation’ of interfaces and allow varying applications, formats, and structures to emerge. The absence of an inclusive and contextual design practice guideline for VI is evident in the existing VI design scenario in India.</p>
-        <p>This early stage of the technology presents an opportunity to establish an ethical design framework that focuses on inclusivity, accessibility, privacy, transparency, and openness. The focus on primary research and usability is pronounced among designers, but centring on digital rights – and not just usability – is a desperate need in design practice. Our study led us to the following critical questions on design:</p>
-      <ul>
-        <li><p>How can ethics and rights become central to design practice for VIs?</p></li>
-        <li><p>What kind of ethical guidelines should be created for designers?</p></li>
-        <li><p>How can design enable VIs to support multiple languages?</p></li>
-        <li><p>How can designers be familiarised with privacy and data protection practices?</p></li>
-        <li><p>In what ways can the design process of creating VIs focus on inclusivity and accessibility?</p></li>
-      </ul>
-      <p>These and other emerging questions must inform the growing landscape of work on VI in India. It is therefore imperative that the research, design, and development of these technologies are also shaped by a sustained and meaningful engagement with these thematics, and, most importantly, with the communities that would benefit the most from these advancements in technologies.</p>
+        <h3 id="The future of accessible voice VIs">The future of accessible voice VIs</h3>
+        <p>VIs have the immense potential to be of assistance to persons who are limited by solely textual interfaces. With the increased uptake of smart appliances in homes and offices, we must consider the universal accessibility of devices so that people with various accessibility needs can use them with ease.</p>
+        <h3 id="Conclusion">Conclusion</h3>
+        <p>Voice-enabled products enable people to apply speech inputs and voice commands to access a variety of services. However, there is very little research on how these applications can help people with various accessibility needs. There is also a need to ensure that not only the device, but even the website, setup, and privacy policies are designed so everyone can access it. Additionally, developers and designers of both hardware and software should look at how to make the devices accessible to people with different types of disabilities; these could be through multiple channels of input and output, tactile markers, and audio feedback. This would go a long way in ensuring that commonly used technologies, including VIs and services are universally accessible to persons with diverse accessibility needs.</p>
         <br />
         <div class="ten wide column content">
         <div class="ten wide column content">
           <h3>Notes</h3>
           <table class="footnote">
+            <tr>
+                <td class="number">1</td>
+   <td class="reference"><a name="fn1"></a>Initiative, W. W. A., “Essential Components of Web Accessibility,” Web Accessibility Initiative (WAI), accessed 3 November 2021, 2018, <ahref=”https://www.w3.org/WAI/fundamentals/components/"target="_blank">https://www.w3.org/WAI/fundamentals/components/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref1">&uarr;</a></span></td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+    <td class="reference"><a name="fn2"></a>Initiative, “Essential Components of Web Accessibility.”&nbsp;&nbsp;<span class="internal-nav"><a href="#ref3">&uarr;</a></span></td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+    <td class="reference"><a name="fn1"></a>Brewer, R., et al., “Accessible Voice Interfaces,”<em>  CSCW 18 Companion, </em> 2018, 441-446 accessed on 2 November 2021 <ahref=”https://doi.org/10.1145/3272973.3273006"target="_blank">https://doi.org/10.1145/3272973.327300</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref3">&uarr;</a></span></td>
+            </tr>
+            <tr>
+            <td class="number">4</td>
+
+            <td class="reference"><a name="fn4"></a> Rodolitz, J., et al. “Accessibility of Voice-Activated Agents for People Who are Deaf or Hard of Hearing,”<em>  Journal on Technology and Persons with Disabilities, </em>  no. (2019): 144-156 &nbsp;&nbsp;<span class="internal-nav"><a href="#ref4">&uarr;</a></span></td>
+            </tr>
+
           <tr>
-              <td class="number">1</td>
-          <td class="reference"><a name="fn1"></a>“Making Voices Heard: Mapping Actors,” <em>Making Voices Heard</em>, accessed 02 February 2022, <a href="http://voice.cis-india.org/mapping-actors.html" target="_blank"> http://voice.cis-india.org/mapping-actors.html</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref1">&uarr;</a></span></td>
-</tr>
-<tr>
-          <td class="number">2</td>
-<td class="reference"><a name="fn2"></a>Hampton, M., “Principles of Conversational Design,” <em>Marvel Blog</em>, 30 October 2020, accessed 4 August 2021, <a href="https://marvelapp.com/blog/principles-of-conversational-design/#:~:text=The%20concept%20of%20conversational%20design,more%20natural%20dialogue%20with%20systems" target="_blank">https://marvelapp.com/blog/principles-of-conversational-design/#:~:text=The%20concept%20of%20conversational%20design,more%20natural%20dialogue%20with%20systems</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref2">&uarr;</a></span></td>
+            <td class="number">5</td>
+      <td class="reference"><a name="fn5"></a>Wolters, M., et al., “Designing a spoken dialogue interface to an intelligent cognitive assistant for people with dementia,” <em> Health Informatics Journal </em> 22, no. 4 1-13 (2015): DOI: 10.1177/1460458215593329&nbsp;&nbsp;<span class="internal-nav"><a href="#ref5">&uarr;</a></span></td>
+
+            </tr>
+            <tr>
+  <td class="number">6</td>
+  <td class="reference"><a name="fn6"></a>Brewer et al, “Accessible Voice Interfaces.”&nbsp;&nbsp;<span class="internal-nav"><a href="#ref6">&uarr;</a></span></td>
+      </tr>
+            <tr>
+            <td class="number">7</td>
+            <td class="reference"><a name="fn7"></a>Pradhan, A., et al., “‘Accessibility Came by Accident’: Use of Voice-Controlled Intelligent Personal Assistants by People with Disabilities,” <em> CHI, </em>2018,<a href=” https://doi.org/10.1145/3173574.3174033”target="_blank">https://doi.org/10.1145/3173574.3174033 </a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref7">&uarr;</a></span></td>
+
+      </tr>
+            <tr>
+            <td class="number">8</td>
+                <td class="reference"><a name="fn8"></a>Pradhan, A., et al., “‘Accessibility Came by Accident’: Use of Voice-Controlled Intelligent Personal Assistants by People with Disabilities,” <em> CHI, </em>2018,<a href=” https://doi.org/10.1145/3173574.3174033”target="_blank">https://doi.org/10.1145/3173574.3174033 </a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref8">&uarr;</a></span></td>
+            </tr>
+               <tr>
+        <td class="number">9</td>
+  <td class="reference"><a name="fn9"></a> Pradhan et al., “‘Accessibility Came by Accident’.” &nbsp;&nbsp;<span class="internal-nav"><a href="#ref9">&uarr;</a></span></td>
+
           </tr>
-<tr>
-              <td class="number">3</td>
-          <td class="reference"><a name="fn3"></a>Hampton, “Principles of Conversational Design.” &nbsp;&nbsp;<span class="internal-nav"><a href="#ref3">&uarr;</a></span></td>
-</tr>
+              <tr>
+      <td class="number">10</td>
+  <td class="reference"><a name="fn10"></a>Pradhan, et al., “‘Accessibility Came by Accident’.”&nbsp;&nbsp;<span class="internal-nav"><a href="#ref10">&uarr;</a></span></td>
+      </tr>
+                <tr>
+            <td class="number">11</td>
+            <td class="reference"><a name="fn11"></a>Research suggests that use of information and communication technologies (ICTs) in the daily living and working environment may enable older adults to stay active longer, remain better socially connected, and live more independently into old age. For more on AAL see: Grazia Cicirelli et al., “Ambient Assisted Living: A Review of Technologies, Methodologies and Future Perspectives for Healthy Aging of Population,” Sensors 21, no. 10 (2021): p. 3549, <a href="https://doi.org/10.3390/s21103549."target="_blank">https://doi.org/10.3390/s21103549.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref11">&uarr;</a></span></td>
+            </tr>
+            <tr>
+            <td class="number">12</td>
+     <td class="reference"><a name="fn12"></a> Rashidi, P. and Mihailidis, A., “A Survey on Ambient-Assisted Living Tools for Older Adults,” <em> IEEE Journal of Biomedical and Health Informatics, </em> 17, no. 3 (2013) 579-590:.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref12">&uarr;</a></span></td>
+            </tr>
+            <tr>
+            <td class="number">13</td>
+      <td class="reference"><a name="fn13"></a>Rashidi and Mihailidis,,“A Survey on Ambient-Assisted Living Tools.”&nbsp;&nbsp;<span class="internal-nav"><a href="#ref13">&uarr;</a></span></td>
+            </tr>
+              <tr>
+  <td class="number">14</td>
+  <td class="reference"><a name="fn14"></a>Vacher, et al., “Experimental Evaluation of Speech Recognition Technologies for Voice-based Home Automation Control in a Smart Home,” Conference: Fourth Workshop on Speech and Language Processing for Assistive Technologies SLPAT 2013, 4th Workshop on Speech and Language Processing for Assistive Technologies, Grenoble, France, (2013).&nbsp;&nbsp;<span class="internal-nav"><a href="#ref14">&uarr;</a></span></td>
+      </tr>
     <tr>
-              <td class="number">4</td>
-          <td class="reference"><a name="fn4"></a>“Symphonyai: Transforming Businesses with Enterprise AI,” <em>Symphony AI</em>, accessed 4 August, 2021, from <a href="https://www.symphonyai.com/" target="_blank">https://www.symphonyai.com/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref4">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">5</td>
-          <td class="reference"><a name="fn5"></a>“Slang Labs: Add Accurate Multilingual Voice Assistants to Your App,” <em>Slang Labs</em>, accessed 4 August, 2021, <a href="https://slanglabs.in/" target="_blank">https://slanglabs.in/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref5">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">6</td>
-          <td class="reference"><a name="fn6"></a>“Navana Tech: Turn on the Conversation,” <em>Navana Tech</em>, accessed 4 August, 2021, <a href="https://navanatech.in/" target="_blank">https://navanatech.in/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref6">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">7</td>
-          <td class="reference"><a name="fn7"></a>“Common Voice by Mozilla,” <em>Common Voice</em>, accessed 4 August, 2021, <a href="https://commonvoice.mozilla.org/en" target="_blank">https://commonvoice.mozilla.org/en</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref7">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">8</td>
-          <td class="reference"><a name="fn8"></a> “Contact Center AI,” <em>Contact Center AI | Observe.AI</em>, accessed 4 August, 2021, <a href="https://www.observe.ai/" target="_blank">https://www.observe.ai/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref8">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">9</td>
-          <td class="reference"><a name="fn9"></a>“Niki: Aapke Ghar Ki Manager,” <em>Niki</em>, accessed 4 August, 2021, <a href="http://niki.ai/" target="_blank">http://niki.ai/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref9">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">10</td>
-          <td class="reference"><a name="fn10"></a>Majumdar, S., “Voice and Vernacular: The Future of E-retail in India,” <em>Fortune India: Business News, Strategy, Finance and Corporate Insight</em>, 27 February 2021 <a href="https://www.fortuneindia.com/first-edit/voice-and-vernacular-the-future-of-e-retail-in-india/104630" target="_blank">https://www.fortuneindia.com/first-edit/voice-and-vernacular-the-future-of-e-retail-in-india/104630</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref10">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">11</td>
-          <td class="reference"><a name="fn11"></a>Choudhury, D., “Building Products for the Next Billion Users: Solving the Language Barrier, Monetisation Puzzle and More,” <em>Inc42 Media</em>, 26 September 2020, <a href="https://inc42.com/features/decoding-the-psychology-of-the-next-billion-users-as-products-scale-up/" target="_blank">https://inc42.com/features/decoding-the-psychology-of-the-next-billion-users-as-products-scale-up/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref11">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">12</td>
-          <td class="reference"><a name="fn12"></a>Sachitanand, R., “Voice, Video and Vernacular: India's Internet Landscape is Changing to Tap New Users,” <em>The Economic Times</em>, 7 October 2018, <a href="https://economictimes.indiatimes.com/tech/internet/voice-video-and-vernacular-indias-internet-landscape-is-changing-to-tap-next-wave-of-users/articleshow/66102478.cms?from=mdr" target="_blank">https://economictimes.indiatimes.com/tech/internet/voice-video-and-vernacular-indias-internet-landscape-is-changing-to-tap-next-wave-of-users/articleshow/66102478.cms?from=mdr</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref12">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">13</td>
-          <td class="reference"><a name="fn13"></a>Lynskey, D., “'Alexa, Are You Invading My Privacy?' – The Dark Side of Our Voice Assistants,” <em>The Guardian</em>, 9 October 2019, <a href="https://www.theguardian.com/technology/2019/oct/09/alexa-are-you-invading-my-privacy-the-dark-side-of-our-voice-assistants" target="_blank">https://www.theguardian.com/technology/2019/oct/09/alexa-are-you-invading-my-privacy-the-dark-side-of-our-voice-assistants</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref13">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">14</td>
-          <td class="reference"><a name="fn14"></a>“What Is a Voice User Interface (VUI)?” <em>Alan Blog</em>, accessed 20 May 2021, <a href="https://alan.app/blog/voiceuserinterface/" target="_blank">https://alan.app/blog/voiceuserinterface/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref14">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">15</td>
-          <td class="reference"><a name="fn15"></a>Thakur, D., “Differentiate between Deterministic and Probabilistic Systems,” <em>Computer Notes</em>, 30 January 2013, accessed 22 May 2021, <a href="https://ecomputernotes.com/mis/information-and-system-concepts/differentiate-between-deterministic-and-probabilistic-systems" target="_blank">https://ecomputernotes.com/mis/information-and-system-concepts/differentiate-between-deterministic-and-probabilistic-systems</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref15">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">16</td>
-          <td class="reference"><a name="fn16"></a>Thakur, D., “Differentiate between Deterministic and Probabilistic Systems.” &nbsp;&nbsp;<span class="internal-nav"><a href="#ref16">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">17</td>
-          <td class="reference"><a name="fn17"></a>Branson, M., “We’re Intentionally Designing Open Experiences, Here’s Why,” <em>Medium</em>, accessed 13 May 2021, <a href="https://medium.com/mozilla-open-innovation/were-intentionally-designing-open-experiences-here-s-why-c6ae9730de54" target="_blank">https://medium.com/mozilla-open-innovation/were-intentionally-designing-open-experiences-here-s-why-c6ae9730de54</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref17">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">18</td>
-          <td class="reference"><a name="fn18"></a>Branson, M., “We’re Intentionally Designing Open Experiences.” &nbsp;&nbsp;<span class="internal-nav"><a href="#ref18">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">19</td>
-          <td class="reference"><a name="fn19"></a>Branson, M., “We’re Intentionally Designing Open Experiences.” &nbsp;&nbsp;<span class="internal-nav"><a href="#ref19">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">20</td>
-          <td class="reference"><a name="fn20"></a>Branson, M., “We’re Intentionally Designing Open Experiences.” &nbsp;&nbsp;<span class="internal-nav"><a href="#ref20">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">21</td>
-          <td class="reference"><a name="fn21"></a>“Voice Principles: Clearleft,” <em>Voice Principles | Clearleft</em>, accessed 7 June 7 2021, <a href="https://www.voiceprinciples.com/" target="_blank">https://www.voiceprinciples.com/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref21">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">22</td>
-          <td class="reference"><a name="fn22"></a>Pearl, C., <em>Designing Voice User Interfaces: Principles of Conversational Experiences</em>, O'Reilly Media, (2017). &nbsp;&nbsp;<span class="internal-nav"><a href="#ref22">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">23</td>
-          <td class="reference"><a name="fn23"></a>“Voice Principles,” Voice Principles. &nbsp;&nbsp;<span class="internal-nav"><a href="#ref23">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">24</td>
-          <td class="reference"><a name="fn24"></a>Santos, M. E., “Designing Better Voice interfaces for Everyday Life,” <em>Medium</em>, accessed 23 June 2021, <a href="https://uxdesign.cc/designing-better-voice-interfaces-for-everyday-life-2cb344913fae" target="_blank">https://uxdesign.cc/designing-better-voice-interfaces-for-everyday-life-2cb344913fae</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref24">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">25</td>
-          <td class="reference"><a name="fn25"></a>Santos, M. E., “Designing Better Voice Interfaces.” &nbsp;&nbsp;<span class="internal-nav"><a href="#ref25">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">26</td>
-          <td class="reference"><a name="fn26"></a>Turow, J., “Shhhh, They're Listening – Inside the Coming Voice-profiling Revolution,” <em>The Conversation</em>, 28 April 2021, <a href="https://theconversation.com/shhhh-theyre-listening-inside-the-coming-voice-profiling-revolution-158921" target="_blank">https://theconversation.com/shhhh-theyre-listening-inside-the-coming-voice-profiling-revolution-158921</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref26">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">27</td>
-          <td class="reference"><a name="fn27"></a>Turow, J., <em>“Shhhh, They're Listening.”</em> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref27">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">28</td>
-          <td class="reference"><a name="fn28"></a>Sengupta, A., “A Sound Relationship: 4 Tips to Build an Engaging Voice User Interface,” <em>Wipro Digital</em>, accessed 18 May 2021, <a href="https://wiprodigital.com/2019/05/22/a-sound-relationship-4-tips-to-build-an-engaging-voice-user-interface/" target="_blank">https://wiprodigital.com/2019/05/22/a-sound-relationship-4-tips-to-build-an-engaging-voice-user-interface/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref28">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">29</td>
-          <td class="reference"><a name="fn29"></a>Kamm, C., “User Interfaces for Voice Applications,” in <em>Voice Communication between Humans and Machines</em>, National Academies Press: OpenBook, 2019, 426 <a href="https://www.nap.edu/read/2308/chapter/30#426" target="_blank">https://www.nap.edu/read/2308/chapter/30#426</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref29">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">30</td>
-          <td class="reference"><a name="fn30"></a>Branson, M., “Prototyping with Intention,” <em>Medium</em>, accessed 10 May 2021, <a href="https://medium.com/mozilla-open-innovation/prototyping-with-intention-33d15fb147c2" target="_blank">https://medium.com/mozilla-open-innovation/prototyping-with-intention-33d15fb147c2</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref30">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">31</td>
-          <td class="reference"><a name="fn31"></a>Nielsen, J., “Voice interfaces: Assessing the Potential,”<em>Nielsen Norman Group</em>, 26 January 2003, <a href="https://www.nngroup.com/articles/voice-interfaces-assessing-the-potential/" target="_blank">https://www.nngroup.com/articles/voice-interfaces-assessing-the-potential/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref31">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">32</td>
-          <td class="reference"><a name="fn32"></a>“Lighthouse  |  tools for web developers  |  google developers,” <em>Google</em>, accessed 17 June 2021, <a href="https://developers.google.com/web/tools/lighthouse" target="_blank">https://developers.google.com/web/tools/lighthouse</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref32">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">33</td>
-          <td class="reference"><a name="fn33"></a>Stanford, “Voice-based social media,” <em>Awaaz.De</em>, accessed 23 June 2021, <a href="https://hci.stanford.edu/research/voice4all/" target="_blank">https://hci.stanford.edu/research/voice4all/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref33">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">34</td>
-          <td class="reference"><a name="fn34"></a>Patel, N., Agarwal, S., Rajput, N., Nanavati, A., Dave, P., Parikh, T., 2009. “Experiences Designing a Voice Interface for Rural India,” paper presented at <em>Spoken Language Technology Workshop</em>, 2008. 21–24. 10.1109/SLT.2008.4777830, <a href="https://www.researchgate.net/publication/224382217_Experiences_designing_a_voice_interface_for_rural_India" target="_blank">https://www.researchgate.net/publication/224382217_Experiences_designing_a_voice_interface_for_rural_India</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref34">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">35</td>
-          <td class="reference"><a name="fn35"></a>Patel, N. et al. “Experiences Designing a Voice Interface for Rural India.” &nbsp;&nbsp;<span class="internal-nav"><a href="#ref35">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">36</td>
-          <td class="reference"><a name="fn36"></a>“About Us,” <em>Gramvaani</em>, accessed 13 July 2021, <a href="https://gramvaani.org/?p=495" target="_blank">https://gramvaani.org/?p=495</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref36">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">37</td>
-          <td class="reference"><a name="fn37"></a>“Community-powered-technology,” <em>Gramvaani</em>, accessed 13 July 2021, <a href="https://gramvaani.org/" target="_blank">https://gramvaani.org/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref37">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">38</td>
-          <td class="reference"><a name="fn38"></a>“How Mobile Vaani Works,” <em>Gramvaani</em>, accessed 13 July 2021, <a href="https://gramvaani.org/?page_id=15" target="_blank">https://gramvaani.org/?page_id=15</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref38">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">39</td>
-          <td class="reference"><a name="fn39"></a>Pearl, C., “Using Voice Interfaces to Make Products More Inclusive,” <em>Harvard Business Review</em>, 16 May 2019, <a href="https://hbr.org/2019/05/using-voice-interfaces-to-make-products-more-inclusive" target="_blank">https://hbr.org/2019/05/using-voice-interfaces-to-make-products-more-inclusive</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref39">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">40</td>
-          <td class="reference"><a name="fn40"></a>Kulkarni, M., “Digital Accessibility: Challenges and Opportunities,” <em>IIMB Management Review 31</em>, no. 1 (2019): 91–98, <a href="https://doi.org/https://doi.org/10.1016/j.iimb.2018.05.009" target="_blank">https://doi.org/https://doi.org/10.1016/j.iimb.2018.05.009</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0970389617301131" target="_blank">https://www.sciencedirect.com/science/article/pii/S0970389617301131</a>  &nbsp;&nbsp;<span class="internal-nav"><a href="#ref40">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">41</td>
-          <td class="reference"><a name="fn41"></a>Pearl, C., “Using Voice Interfaces.” &nbsp;&nbsp;<span class="internal-nav"><a href="#ref41">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">42</td>
-          <td class="reference"><a name="fn42"></a>Hern, A., “Apple Contractors 'Regularly Hear Confidential Details' on Siri Recordings,” <em>The Guardian</em>, 26 July 2019, <a href="https://www.theguardian.com/technology/2019/jul/26/apple-contractors-regularly-hear-confidential-details-on-siri-recordings" target="_blank">https://www.theguardian.com/technology/2019/jul/26/apple-contractors-regularly-hear-confidential-details-on-siri-recordings</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref42">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">43</td>
-          <td class="reference"><a name="fn43"></a>“Improving Siri's Privacy Protections,” <em>Apple Newsroom (India)</em>, accessed 29 September 2021, <a href="https://www.apple.com/in/newsroom/2019/08/improving-siris-privacy-protections/" target="_blank">https://www.apple.com/in/newsroom/2019/08/improving-siris-privacy-protections/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref43">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">44</td>
-          <td class="reference"><a name="fn44"></a>Naidu, S., “Design Concerns in Creating Privacy Notices,” <em>CIS India</em>, 29 May 2018, <a href="https://cis-india.org/internet-governance/blog/design-concerns-in-creating-privacy-notices" target="_blank">https://cis-india.org/internet-governance/blog/design-concerns-in-creating-privacy-notices</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref44">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">45</td>
-          <td class="reference"><a name="fn45"></a>Sigg, S., Nguyen, L. N., Zarazaga, P. P., and Backstrom, T., “Provable Consent for Voice User Interfaces,” <em>2020 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops)</em>, 2020, 1–4, <a href="https://doi.org/10.1109/percomworkshops48775.2020.9156182" target="_blank">https://doi.org/10.1109/percomworkshops48775.2020.9156182</a>, <a href="https://ieeexplore.ieee.org/document/9156182" target="_blank">https://ieeexplore.ieee.org/document/9156182</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref45">&uarr;</a></span></td>
-</tr>
-<tr>
-              <td class="number">46</td>
-          <td class="reference"><a name="fn46"></a>Gray, S., “Always On: Privacy Implications of Microphone-enabled Devices,” <em>FPF</em>, accessed 8 June 2021, <a href="https://fpf.org/wp-content/uploads/2016/04/FPF_Always_On_WP.pdf" target="_blank">https://fpf.org/wp-content/uploads/2016/04/FPF_Always_On_WP.pdf</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref46">&uarr;</a></span></td>
-</tr>
+  <td class="number">15</td>
+  <td class="reference"><a name="fn15"></a>Vacher et al., “Experimental Evaluation.”.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref15">&uarr;</a></span></td>
+        </tr>
+              <tr>
+  <td class="number">16</td>
+            <td class="reference"><a name="fn16"></a> Pradhan et al., “‘Accessibility Came by Accident’.”&nbsp;&nbsp;<span class="internal-nav"><a href="#ref16">&uarr;</a></span></td>
+            </tr>
+  <tr>
+            <td class="number">17</td>
+            <td class="reference"><a name="fn17"></a> Pacnik, G. et al., “Voice Operated Intelligent Wheelchair – VOIC”, in <em> Proceedings of the IEEE International Symposium on Industrial Electronics </em> 3, (2005): 1221-1226,<ahref="https://ieeexplore.ieee.org/document/1529099"target="_blank">https://ieeexplore.ieee.org/document/1529099</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref17">&uarr;</a></span></td>
+            </tr>
+  <tr>
+            <td class="number">18</td>
+  <td class="reference"><a name="fn18"></a>Manaris, B., et al., “A Listening Keyboard for Users with Motor Impairments – A Usability Study,”<em>  International Journal of Speech Technology</em> 5 (Kluwer Academic Publishers, 2002); 371–388.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref18">&uarr;</a></span></td>
+            </tr>
+  <tr>
+                <td class="number">19</td>
+                  <td class="reference"><a name="fn19"></a>Manaris et al.,“A Listening Keyboard.”&nbsp;&nbsp;<span class="internal-nav"><a href="#ref19">&uarr;</a></span></td>
+            </tr>
+            <tr>
+            <td class="number">20</td>
+      <td class="reference"><a name="fn20"></a> Dai, L., et al., “Speech-Based Cursor Control: a Study of Grid-Based Solutions,” ASSETS 2004 – <em> The Sixth International ACM SIGACCESS Conference on Computers and Accessibility </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref20">&uarr;</a></span></td>
+            </tr>
+          <tr>
+            <td class="number">21</td>
+  <td class="reference"><a name="fn21"></a>Fok, R., et al., “Towards More Robust Speech Interactions for Deaf and Hard of Hearing Users,” ASSETS 2018, DOI:<a href="http://dx.doi.org/10.1145/3234695.3236343"target="_blank">http://dx.doi.org/10.1145/3234695.3236343</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref21">&uarr;</a></span></td>
+            </tr>
+      <tr>
+  <td class="number">22</td>
+  <td class="reference"><a name="fn22"></a>Rodolitz et al., “Accessibility of Voice-Activated Agents.”&nbsp;&nbsp;<span class="internal-nav"><a href="#ref22">&uarr;</a></span></td>
+      </tr>
+               <tr>
+  <td class="number">23</td>
+  <td class="reference"><a name="fn23"></a>Pradhan et al., “‘Accessibility Came by Accident’.”&nbsp;&nbsp;<span class="internal-nav"><a href="#ref23">&uarr;</a></span></td>
+      </tr>
+            <tr>
+  <td class="number">24</td>
+  <td class="reference"><a name="fn24"></a> Rodolitz et al., “Accessibility of Voice-Activated Agents.”.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref24">&uarr;</a></span></td>
+      </tr>
+            <tr>
+  <td class="number">25</td>
+            <td class="reference"><a name="fn25"></a> Shivashankara, S. and  Srinath, S., “A Review on Vision Based American Sign Language Recognition, Its Techniques, and Outcomes,” Proceedings of the 7th International Conference on Communication Systems and Network Technologies (CSNT), IEEE, 2017.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref25">&uarr;</a></span></td>
+            </tr>
+            <tr>
+            <td class="number">26</td>
+            <td class="reference"><a name="fn26"></a>Pradhan et al., “‘Accessibility Came by Accident’.”.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref26">&uarr;</a></span></td>
+            </tr>
+               <tr>
+        <td class="number">27</td>
+  <td class="reference"><a name="fn27"></a>H. M. Lawrence, “Beyond the Graphic User Interface”, in <em> Rhetorical Speculations: The Future of Rhetoric, Writing, and Technology, </em> ed. S. Sundvall, (University Press of Colorado, 2019).&nbsp;&nbsp;<span class="internal-nav"><a href="#ref27">&uarr;</a></span></td>
+          </tr>
+              <tr>
+      <td class="number">28</td>
+  <td class="reference"><a name="fn28"></a> Pyaneandee, C. (2019). <em> International disability law: A Practical Approach to the United Nations Convention on the Rights of Persons with Disabilities, </em>(Taylor & Francis, 2019). &nbsp;&nbsp;<span class="internal-nav"><a href="#ref28">&uarr;</a></span></td>
+      </tr>
+                <tr>
+            <td class="number">29</td>
+            <td class="reference"><a name="fn29"></a>Article 2, UN General Assembly, “Convention on the Rights of Persons with Disabilities : resolution / adopted by the General Assembly,” 24 January 2007, A/RES/61/106.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref29">&uarr;</a></span></td>
+         </tr>
+            <tr>
+            <td class="number">30</td>
+  <td class="reference"><a name="fn30"></a>The Centre for Internet and Society and The Office of the Chief Commissioner for Persons with Disabilities, Department of Disability Affairs Ministry of Social Justice & Empowerment Govt. of India, National Compendium of Laws, Policies and Programmes for Persons with Disabilities, 2014.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref31">&uarr;</a></span></td>
+                      <tr>
+            <td class="number">31</td>
+  <td class="reference"><a name="fn31"></a>Feenberg, A., “Democratizing Technology: Interests, Codes, Rights,” <em> The Journal of Ethics </em> 5 no.2 (2001):, 192–193.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref31">&uarr;</a></span></td>
+            </tr>
      </table>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
@@ -402,12 +245,17 @@ Designers and services have put together guidelines and principles of conversati
       </div>
       <div class="five wide column">
         <h3>About the Study</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum facilisis leovel fringilla est ullamcorper. Faucibus scelerisque eleifend donec pretium. Nunc vel risus commodo viverra. In hendrerit gravida rutrum quisque non.
-Egestas sed sed risus pretium. Nulla porttitor massa id neque aliquam.</p>
+        <p>We believe that voice interfaces have the potential to democratise the use of the internet by addressing limitations related to reading and writing on digital text-only platforms and devices. This report examines the current landscape of voice interfaces in India, with a focus on concerns related to privacy and data protection, linguistic barriers, and accessibility for persons with disabilities (PwDs). This project was undertaken with support by the Mozilla Corporation.</p>
       </div>
       <div class="five wide column">
         <h3>Research Team</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum facilisis leovel fringilla est ullamcorper. Faucibus scelerisque eleifend donec pretium. Nunc vel risus commodo viverra. In hendrerit gravida rutrum quisque non. Egestas sed sed risus pretium. Nulla porttitor massa id neque aliquam.</p>
+        <p><em>Research</em> Shweta Mohandas, Saumyaa Naidu, Deepika NS, Divya Pinheiro, Sweta Bisht</p>
+<p><em>Conceptualisation, Planning, and Research Inputs</em> Sumandro Chattapadhyay, Puthiya Purayil Sneha</p>
+<p><em>Illustration</em> Kruthika NS</p>
+<p><em>Website Design</em> Saumyaa Naidu</p>
+<p><em>Website Development</em> Sumandro Chattapadhyay, Pranav M Bidare</p>
+<p><em>Review and Editing</em> Puthiya Purayil Sneha, Divyank Katira, Pranav M Bidare, Torsha Sarkar, Pallavi Bedi, Divya Pinheiro</p>
+<p><em>Copy Editing</em> The Clean Copy</p>
       </div>
       <div class="four wide column">
         <h3>Copyright and Credits</h3>
