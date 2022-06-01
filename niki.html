@@ -16,7 +16,7 @@
 </head>
 <body>
   <!-- Header -->
-  <div class="">
+  <div>
     <div class="ui fluid container banner">
       <div class="banner-image"></div>
     </div>
@@ -25,177 +25,142 @@
   <div class="blue nav">
     <div class="ui container">
       <div class="nav-entries">
-        <span id="home-inactive">Home</span> <a href="#design-policy-brief">Design Brief</a> <a href="#design-policy-brief">Policy Brief</a> <a href="#mapping-actors">Mapping Actors</a> <a href="#case-studies">Case Studies</a> <a href="#literature-surveys">Literature Surveys</a> <a href="#resources">Resources</a> <span id="report"><a href="docs/CIS_MakingVoicesHeard_Report.pdf"><i class="fas fa-arrow-circle-down"></i> Get Full Report</a></span>
+        <a href="index.html" id="home">Home</a> <a href="design-brief.html">Design Brief</a> <span id="inactive">Policy Brief</span> <a href="mapping-actors.html">Mapping Actors</a> <a href="#case-studies">Case Studies</a> <a href="#literature-surveys">Literature Surveys</a> <a href="#resources">Resources</a> <span id="report"><a href="docs/CIS_MakingVoicesHeard_Report.pdf"><i class="fas fa-arrow-circle-down"></i> Get Full Report</a></span>
       </div>
     </div>
   </div>
-  <!-- Design Brief and Policy Brief -->
-  <div class="grey" id="design-policy-brief">
+  <!-- Title -->
+  <div class="grey">
     <div class="ui container four column stackable grid">
       <div class="one wide column empty">
       </div>
-      <div class="six wide column">
-        <div class="design-brief">
-          <h2>Design Brief</h2>
-          <img src="img/DesignBrief.jpg" style="margin-bottom: 10px;" width="100%" />
-          <p id="lead"><a href="design-brief.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</a>.</p>
-          <p>Elementum facilisis leo vel fringilla est ullamcorper. Faucibus scelerisque eleifend donec pretium. Nunc vel risus commodo viverra. In hendrerit gravida rutrum quisque non. Egestas sed sed risus pretium. Nulla porttitor massa id neque aliquam. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque.</p>
-        </div>
-      </div>
-      <div class="two wide column empty">
-      </div>
-      <div class="six wide column">
-        <div class="policy-brief">
-          <h2>Policy Brief</h2>
-          <img src="img/PolicyBrief.jpg" style="margin-bottom: 10px;" width="100%" />
-          <p id="lead"><a href="policy-brief.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</a>.</p>
-          <p>Elementum facilisis leo vel fringilla est ullamcorper. Faucibus scelerisque eleifend donec pretium. Nunc vel risus commodo viverra. In hendrerit gravida
-rutrum quisque non. Egestas sed sed risus pretium. Nulla porttitor massa id neque aliquam. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque.</p>
-        </div>
+      <div class="fourteen wide column text">
+        <h2>Indic TTS</h2>
       </div>
       <div class="one wide column empty">
       </div>
+      <div class="one wide column empty">
+      </div>
+      <div class="nine wide column text">
+
+        <h3 id="about">About</h3>
+
+        <p><strong> “The amount of work in the speech domain for Indian languages is comparatively lower than that for other languages.”<sup class="superscript"><a href="#fn1">1</a></sup><a name="ref1"></a> </strong></p>
+
+          <p> The Indic TTS consortium was created and funded by the Department of Electronics and Information Technology, Ministry of Communications and Information Technology,<sup class="superscript"><a href="#fn2">2</a></sup><a name="ref2"></a> Government of India, to create more Indic language speech data to reduce the data divide between English and Indian languages. The Indic TTS website describes this as “a project on developing text-to-speech (TTS) synthesis systems for Indian languages, improving quality of synthesis, as well as small footprint TTS integrated with disability aids and various other applications”.<sup class="superscript"><a href="#fn3">3</a></sup><a name="ref3"></a>
+    In a recently published paper on voice technologies, researchers involved in the TTS project stated that the paucity of content in Indian languages was stark when it came to the multimedia domain and digital assistants,<sup class="superscript"><a href="#fn4">4</a></sup><a name="ref4"></a> thereby highlighting the need for speech data in Indian languages. This paucity was attributed to the lack of localisation of technologies like optical character recognition (Optical character recognition or OCR is the electronic or mechanical conversion of images of typed, handwritten, or printed text into machine-encoded text in a way that can be read by speech-to-text systems)<sup class="superscript"><a href="#fn5">5</a></sup><a name="ref5"></a> neural machine translation(neural machine translation uses computing systems that mimic the working of the human brain to predict the order of words in sentences)<sup class="superscript"><a href="#fn6">6</a></sup><a name="ref6"></a> and text-to-speech systems.The speech data for the database was collected through the joint efforts of the 13 consortium members: IIT Madras, IIIT Hyderabad, IIT Kharagpur, IISc Bangalore, CDAC Mumbai, CDAC Thiruvananthapuram, IIT Guwahati, CDAC Kolkata, CDAC Pune, SSNCE Chennai, DA-IICT Gujarat, IIT Mandi, and PESIT Bangalore. The database and text-to-speech synthesisers were built for 13 languages, namely, Assamese, Bengali, Bodo, Gujarati, Hindi, Kannada, Malayalam, Manipuri, Marathi, Odia, Rajasthani, Tamil, and Telugu.</p>
+    <h3 id="methodology">Methodology and process</h3>
+    <h4>Language and text selection</h4>
+        <p> The process of creating voice datasets in Indian languages involved several steps, beginning with the selection of languages that are the focus of the project and then building speech technologies using the voice datasets. The selection of the 13 languages was based on the following criteria: optimal text selection, speaker selection, pronunciation variation, recording specification, text correction for handling out-of-the-vocabulary words, and data verification.<sup class="superscript"><a href="#fn7">7</a></sup><a name="ref7"></a> To ensure the quality of data, characteristics that affect speech synthesis quality such as encoding (converting one form of data to another), sampling rate (number of samples of audio recorded every second) etc. were considered. The sentences for the speech recordings were taken through web crawlers from newspaper reports, Wikipedia pages, websites, and blogs in the respective Indian language. To achieve good coverage of topics and words, sentences were also taken from different types of literature, including children’s stories, science writing, tourism content, etc. Care was also taken to ensure that the texts were commonly used, free of errors, easy to read, and covered a wide range of words and syllables. Code-mixed sentences were avoided.</p>
+        <h4>Speaker selection and recording </h4>
+        <p> To create speech recordings for the datasets, two voice talents – a male and a female – were chosen for each language. The recordings were made in a studio room without noise or echo for clarity of the recordings. The voice talents were voice professionals who were either voice artists or newsreaders to ensure clarity in the pronunciation and diction. They were given breaks every 45 minutes to avoid fatigue. In each recording, individual sentences were isolated. A total of 40 hours of speech data was collected for a given language – 20 hours of Indian monolingual/single language data (10 hours each of male and female voice data) and 20 hours of English data recorded by first language speakers (10 hours each of male and female voice data). The recorded files were stored in .wav format to ensure that the recordings were of high sound quality.</p>
+      <h4>Text-to-speech synthesis</h4>
+        <p>One of the researchers in the Indic TTS project defines text-to-speech synthesis as the “process of converting an arbitrary input text to its corresponding speech output”. In the context of Indian languages, the TTS system uses syllables or phonemes (units of sound that can distinguish one word from another in a particular language) as a sub-word unit (where words are split into smaller words that occur more frequently). The three major components involved in building a TTS system are text parsing, speech segmentation, and speech modelling.<sup class="superscript"><a href="#fn8">8</a></sup><a name="ref8"></a> Simply put, the objective of a TTS system is to convert text into speech output. TTS systems can be divided into two types – domain-specific and vocabulary independent. In the case of domain specific systems, the words/text to be synthesised should be limited to a particular domain, such as banking or railway broadcast, while for vocabulary independent systems, any text will work. </p>
+          <h3 id="languages">Languages</h3>
+        <p>The main motivation for the project was to address the unavailability of voice data in Indian languages. The functioning of a TTS system is dependent on the training data that is fed into the system, which includes speech .wav files along with a transcript of the corresponding text. The TTS project aims to develop text-to-speech synthesisers for 13 Indian languages, which could help researchers and developers work on Indian voice applications. One of the goals of the project is to make the voice of the text-to-speech system sound as natural and understandable as possible. The first phase of the project concentrated on three languages (3 Indo-Aryan languages and 3 Dravidian languages), the second phase added 7 more languages to the study.</p>
+        <h3 id="access">Access and accessibility</h3>
+        <p>The TTS project was started with the idea of giving people with disabilities access to regional information on the internet, such as news reports in Indian languages. Since the consortium is a publicly funded project, the datasets and research have been made public on its website. The datasets are available free of cost to researchers – they just need to log in to the website to use them. Start-ups and businesses that want to use the data can sign a Memorandum Of Understanding with Indic TTS and access the data.</p>
+
+      <h3 id="privacy">Privacy and data collection</h3>
+        <p>As stated earlier, the text data for training the systems was taken from publicly available sources such as online news portals, Wikipedia pages, websites, and blogs; hence, privacy and data protection are not significant concerns. Additionally, with regard to the speech data, the readings were done by professional voice artists who recorded sounds and words for the project based on a script provided to them by the researchers.</p>
+
+     <h3 id="challenges">Challenges</h3>
+
+        <p>One of the main challenges for the researchers was ensuring that the datasets were comprehensive and accurate while keeping the cost of creating and accessing them low. Since the project was publicly funded, the researchers needed to work with the available funding and ensure that the research was accessible and free. As stated earlier, the data and the research are open to researchers,  and start-ups can request the data after signing an MOU. Another challenge was making the speech output sound more human-like and less robotic, similar to the heavily funded and data-rich interfaces of Amazon and Google. The other challenge was making the output speech systems context-specific, such as with children’s books.
+        Voice interfaces provide accessibility support for individuals who are unable to see the screen or understand the text. However, no applications other than Google and Amazon claim to provide accessibility features. Amazon Echo’s website lists the various features that customers with vision, hearing, mobility, and speech accessibility needs could use. <sup class="superscript"><a href="#fn18">18</a></sup><a name="ref18"></a> Google Home provides accessibility features that allow the individual to control appliances and entertainment, make phone calls, broadcast messages, and manage tasks in addition to its voice assistant.<sup class="superscript"><a href="#fn19">19</a></sup><a name="ref19"></a></p>
+
+      <h3 id="future">Future of Indic TTS</h3>
+        <p>The project looks at continuing research and data collection with the help of government funding. Given the scale and amount of funding needed for such projects, including the requirement of infrastructure and trained human resources, the government is the primary source of funding. With the new funding from the Ministry of Electronics and Information Technology, the researchers at IITM have started a project to make English lecture videos available in Indian languages. The objective of this project is to make lectures in different domains, like humanities, healthcare, etc., freely accessible to students in their languages. This is a small-scale project, and Indic TTS hopes to expand it to more languages and subjects. </p>
+        <br />
+    <i> Disclaimer: This is an independent case study conducted as a part of the Making Voices Heard Project, supported by the Mozilla Corporation. The researchers have not received any external remuneration as a part of this case study, and claim no conflict of interest.</i>
+      </div>
+      <div class="one wide column empty">
+      </div>
+      <div class="five wide column meta">
+        <p><span id="grey">Research and Writing by</span> <br />Shweta Mohandas and Saumyaa Naidu
+          <br />
+        <span id="grey">Review and Editing by</span> <br />Puthiya Purayil Sneha, <br /><span id="grey">and</span> Torsha Sarkar<br />
+        <span id="grey">Research Inputs by</span> <br />Sumandro Chattapadhyay<br />
+	       <br />
+        <a href="docs/MozVoice_PolicyBrief_02.pdf"><i class="fas fa-arrow-circle-down" style="color: black;" ></i> Download Policy Brief</a></p>
+        <br />
+         <hr />
+	       <br />
+        <p><span style="line-height: 3em;">CONTENTS</span></p>
+	      <p><a href="#about"><strong>About</strong></a></p>
+        <p><a href="#methodology"><strong>Methodology and Process</strong></a></p>
+        <p><a href="#languages"><strong>Languages</strong></a></p>
+        <p><a href="#access"><strong>Access and accessibility</strong></a></p>
+        <p><a href="#privacy"><strong>Privacy and data collection </strong></a></p>
+        <p><a href="#challenges"><strong>Challenges</strong></a></p>
+        <p><a href="#future"><strong>Future of Indic TTS</strong></a></p>
+</div>
+
+<div class="ten wide column content">
+</div>
+<div class="ten wide column content">
+  <br />
+<h3>Notes</h3>
+<table class="footnote">
+  <tr>
+    <td class="number">1</td>
+<td class="reference"><a name="fn1"></a> Baby, Arun et al., "Resources for Indian Languages", In <em>Proceedings of CBBLR workshop, International Conference on Text, Speech and Dialogue</em>. Springer, 2016.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref1">&uarr;</a></span></td>
+
+      	</tr>
+
+<tr>
+        	<td class="number">2</td>
+      	<td class="reference"><a name="fn2"></a>“Indic TTS”, Indic TTS;Department of Electronics and Information Technology (DEITY) has been renamed to Ministry of Electronics and Information Technology (MEITY) 03 November 2021, <a href="https://www.iitm.ac.in/donlab/tts/ " target="_blank"> https://www.iitm.ac.in/donlab/tts/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref2">&uarr;</a></span></td>
+      	</tr>
+
+
+<tr>
+        	<td class="number">3</td>
+    <td class="reference"><a name="fn3"></a> “Indic TTS”,<em> Indic TTS.</em> Accessed 3 November 2021. &nbsp;&nbsp;<span class="internal-nav"><a href="#ref3">&uarr;</a></span></td
+
+      	</tr>
+
+
+<tr>
+        	<td class="number">4</td>
+    <td class="reference"><a name="fn4"></a>Baby Arun, "Resources for Indian Languages"&nbsp;&nbsp;<span class="internal-nav"><a href="#ref4">&uarr;</a></span></td
+
+      	</tr>
+<tr>
+        	<td class="number">5</td>
+
+<td class="reference"><a name="fn5"></a> “An Introduction to Optical Character Recognition for Beginners”, Towards Data Science, accessed 5 January 2022, <a href="https://towardsdatascience.com/an-introduction-to-optical-character-recognition-for-beginners-14268c99d60"target="_blank">https://towardsdatascience.com/an-introduction-to-optical-character-recognition-for-beginners-14268c99d60 </a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref5">&uarr;</a></span></td>
+
+      	</tr>
+
+<tr>
+        	<td class="number">6</td>
+
+<td class="reference"><a name="fn6"></a> Tan,Zhixing et al., “Neural machine translation: A review of methods, resources, and tools”, AI Open Volume 1.(2020):5-21, <a href="https://doi.org/10.1016/j.aiopen.2020.11.001."target="_blank">https://doi.org/10.1016/j.aiopen.2020.11.001. </a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref6">&uarr;</a></span></td>
+
+      	</tr>
+
+<tr>
+        	<td class="number">7</td>
+    <td class="reference"><a name="fn7"></a> “Indic TTS”,<em> Indic TTS.</em>&nbsp;&nbsp;<span class="internal-nav"><a href="#ref7">&uarr;</a></span></td
+
+      	</tr>
+
+<tr>
+        	<td class="number">8</td>
+
+<td class="reference"><a name="fn8"></a>  Baby, Arun, “A Unified Approach to Speech Synthesis in Indian Languages”, (MS Thesis, IIT Madras, 2019), 1–93,<a href=" https://www.arunbaby.com/assets/docs/MSthesis_2019.pdf."target="_blank"> https://www.arunbaby.com/assets/docs/MSthesis_2019.pdf.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref8">&uarr;</a></span></td>
+
+
+</tr>
+</table>
     </div>
   </div>
-  <!-- Mapping Actors -->
-  <div class="blue" id="mapping-actors">
-    <div class="ui container two column stackable grid">
-      <div class="one wide column empty">
+
+      <div class="six wide column empty">
       </div>
-      <div class="nine wide column">
-        <h2>Mapping Actors</h2>
-	<div id="image">
-          <img src="img/ActorsMappingInfographicCropped.jpg" width="90%" />
-      	</div>
-      </div>
-      <div class="five wide column" id="mapping-actors-desc">
-        <p id="lead"><a href="mapping-actors.html">To understand the landscape of voice technologies in India, we mapped 27 voice interface developers between 2019 and 2020.</a></p>
-      </div>
-      <div class="one wide column empty">
-      </div>
-    </div>
-  </div>
-  <!-- Case Studies -->
-  <div class="grey" id="case-studies">
-    <div class="ui container three column stackable grid">
-      <div class="one wide column empty">
-      </div>
-      <div class="fourteen wide column">
-        <h2>Case Studies</h2>
-      </div>
-      <div class="one wide column empty">
-      </div>
-      <div class="one wide column empty">
-      </div>
-      <div class="four wide column" id="case-studies-entries">
-          <img src="img/CaseStudy_CommonVoice.jpg" width="100%" />
-          <p id="lead"><a href="case-studies/common-voice.html">Common Voice</a></p>
-          <p>Short description text</p>
-      </div>
-      <div class="one wide column empty">
-      </div>
-      <div class="four wide column" id="case-studies-entries">
-          <img src="img/CaseStudy_IndicTTS.jpg" width="100%" />
-          <p id="lead"><a href="case-studies/indic-tts.html">Indic TTS</a></p>
-          <p>Short description text</p>
-      </div>
-      <div class="one wide column empty">
-      </div>
-      <div class="four wide column" id="case-studies-entries">
-          <img src="img/CaseStudy_Niki.jpg" width="100%" />
-          <p id="lead"><a href="case-studies/niki.html">Niki</a></p>
-          <p>Short description text</p>
-      </div>
-      <div class="two wide column empty">
-      </div>
-    </div>
-  </div>
-  <!-- Literature Surveys -->
-  <div class="yellow" id="literature-surveys">
-    <div class="ui container two column stackable grid">
-      <div class="one wide column empty">
-      </div>
-      <div class="fourteen wide column">
-        <h2>Literature Surveys</h2>
-      </div>
-      <div class="one wide column empty">
-      </div>
-      <div class="one wide column empty">
-      </div>
-      <div class="six wide column">
-        <h3><a href="">Evolution and Typology</a></h3>
-        <img src="img/LitSurvey_EvolutionTypology.jpg" style="border-radius: 50%; float: left; margin: 1em 3em 1em 0;" width="30%" />
-        <p style="margin: 2em 0 0 0;">Elementum facilisis leo vel fringilla est ullamcorper. Faucibus scelerisque eleifend donec pretium. Nunc vel risus commodo viverra. In hendrerit gravida rutrum quisque non.</p>
-      </div>
-      <div class="two wide column empty">
-      </div>
-      <div class="six wide column" id="lit-survey-desc">
-        <h3><a href="">Accessibility and Voice Interfaces</a></h3>
-        <img src="img/LitSurvey_Accessibility.jpg" style="border-radius: 50%; float: left; margin: 1em 3em 1em 0;" width="30%" />
-        <p style="margin: 2em 0 0 0;">Elementum facilisis leo vel fringilla est ullamcorper. Faucibus scelerisque eleifend donec pretium. Nunc vel risus commodo viverra. In hendrerit gravida rutrum quisque non.</p>
-      </div>
-      <div class="one wide column empty">
-      </div>
-      <div class="one wide column empty">
-      </div>
-      <div class="six wide column" id="lit-survey-desc">
-        <h3><a href="">Languages and Voice Interfaces</a></h3>
-        <img src="img/LitSurvey_Languages.jpg" style="border-radius: 50%; float: left; margin: 1em 3em 1em 0;" width="30%" />
-        <p style="margin: 2em 0 0 0;">Elementum facilisis leo vel fringilla est ullamcorper. Faucibus scelerisque eleifend donec pretium. Nunc vel risus commodo viverra. In hendrerit gravida rutrum quisque non.</p>
-      </div>
-      <div class="two wide column empty">
-      </div>
-      <div class="six wide column" id="lit-survey-desc">
-        <h3><a href="">Privacy and Voice Interfaces</a></h3>
-        <img src="img/LitSurvey_Privacy.jpg" style="border-radius: 50%; float: left; margin: 1em 3em 1em 0;" width="30%" />
-        <p style="margin: 2em 0 0 0;">Elementum facilisis leo vel fringilla est ullamcorper. Faucibus scelerisque eleifend donec pretium. Nunc vel risus commodo viverra. In hendrerit gravida rutrum quisque non.</p>
-      </div>
-      <div class="one wide column empty">
-      </div>
-    </div>
-  </div>
-  <!-- Resources -->
-  <div class="grey" id="resources">
-    <div class="ui container two column stackable grid">
-      <div class="one wide column empty">
-      </div>
-      <div class="fourteen wide column">
-        <h2>Resources</h2>
-      </div>
-      <div class="one wide column empty">
-      </div>
-      <div class="one wide column empty">
-      </div>
-      <div class="four wide column">
-        <h4>&nbsp;</h4>
-        <p>Browse here for a selection of the latest research on voice interfaces, in India and across the world, and to download sections of the report. </p>
-        <p></p>
-      </div>
-      <div class="five wide column">
-        <h4>Report</h4>
-        <p><a href="">Open voice data for all: Making speech data in Indian languages more accessible, Voice Technologies Working Group</a></p>
-        <p><a href="">“Ok Google: How is voice making technology more accessible in India?” WHITEPAPER Voice, the bridge to "Bharat"</a></p>
-        <p><a href="">‘Okay google, what about my privacy?’: User's privacy perceptions and acceptance of voice based digital assistants</a></p>
-        <p><a href="">"Accessibility Came by Accident": Use of Voice-Controlled Intelligent Personal Assistants by People with Disabilities</a></p>
-        <p><a href="">Alexa, Siri, Cortana, and More: An Introduction to Voice Assistants</a></p>
-        <p><a href="">How Might Voice Assistants Raise Our Children?</a></p>
-        <p><a href="">Using Voice Interfaces to Make Products More Inclusive</a></p>
-        <p><a href="">A Voice User Interface for Low-literacy Users in a Rural Community</a></p>
-        <p><a href="">Design Lessons from Creating a Mobile-based Community Media Platform in Rural India</a></p>
-        <p></p>
-      </div>
-      <div class="five wide column">
-        <h4>Additional Readings</h4>
-        <p><a href="">Elementum facilisis leo vel fringilla est ullamcorper</a></p>
-        <p><a href="">Faucibus scelerisque eleifend donec pretium</a></p>
-        <p><a href="">Nunc vel risus commodo viverra</a></p>
-        <p><a href="">In hendrerit gravida rutrum quisque non</a></p>
-        <p><a href="">Egestas sed sed risus pretium</a></p>
-        <p><a href="">Nulla porttitor massa id neque aliquam</a></p>
-        <p></p>
-      </div>
-      <div class="one wide column empty">
-      </div>
+
+
     </div>
   </div>
   <!-- Footer -->
