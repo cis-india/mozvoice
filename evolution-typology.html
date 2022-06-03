@@ -44,15 +44,15 @@
       </div>
       <div class="nine wide column text">
 
-        <h3 id="about">Background</h3>
+        <h3 id="Background">Background</h3>
 
 <p> The availability of multiple modes of interaction such as voice and gesture makes devices accessible to a wide variety of people. Voice interfaces (VI), in particular, create a level playing field for those who are limited by single-language, text-based interfaces.</p>
 <p> Schnelle-Walka defines VIs as “user interfaces using speech input through a speech recognizer and speech output through speech synthesis or prerecorded audio”.<sup class="superscript"><a href="#fn1">1</a></sup><a name="ref1"></a> In essence, VI technologies involve two processes: one converting the language to code that a computer understands, and converting the computer language back to a language that the human understands. Considering that the predominant means of input for VIs is speech, they are also known as natural language interfaces.<sup class="superscript"><a href="#fn2">2</a></sup><a name="ref2"></a></p>
-<h3 id="about">Tracing the evolution of VIs</h3>
+<h3 id="Tracing the evolution of VIs">Tracing the evolution of VIs</h3>
 <p> Before Siri and Alexa, we had ‘Audrey’, created by Bell Laboratories’ Harry Fletcher and Homer Dudley, who are considered the pioneers of VIs for their groundbreaking research on speech synthesis and human speech modelling.<sup class="superscript"><a href="#fn3">3</a></sup><a name="ref3"></a> In 1952, Audrey was used for number recognition through spoken input.<sup class="superscript"><a href="#fn4">4</a></sup><a name="ref4"></a> A decade later, IBM’s ‘Shoebox’ could not only recognise digits from zero to nine but also comprehend 16 words.<sup class="superscript"><a href="#fn5">5</a></sup><a name="ref5"></a></p>
 <p> In 1992, AT&T Telefonica developed a speech-to-speech prototype, VESTS (Voice English/Spanish Translator), which relied heavily on spoken language translation.<sup class="superscript"><a href="#fn6">6</a></sup><a name="ref6"></a> VESTS, a speaker-trained system that could process over 450 words, was exhibited at the Seville World's Fair in Spain. VIs have come a long way from these early prototypes to modern voice assistants, such as Alexa, Siri, Cortana, and the Google Assistant, which are now accessible to consumers worldover.<sup class="superscript"><a href="#fn7">7</a></sup><a name="ref7"></a></p>
 <p> One of the main reasons for the proliferation of VIs today is that since 2012 smartphones come with a built-in VI. According to a 2018 PwC survey, consumers issued voice commands most commonly on smartphones from among a plethora of voice-enabled devices.<sup class="superscript"><a href="#fn8">8</a></sup><a name="ref8"></a> Mobile phones now operate almost like ‘shrunken desktops’ because of their inherent operational versatility. However, the reduced screen size is the primary structural limitation of these devices. To overcome this limitation, voice has become an important input to complete tasks without having to use the touch function or type on their phones.<sup class="superscript"><a href="#fn9">9</a></sup><a name="ref9"></a> Hence, developers have now integrated cloud-based voice technologies into devices – as in the case of Amazon Echo and Google Home as well as through open-source initiatives such as Mozilla’s Deep Speech, which is an open-source speech-to-text engine.<sup class="superscript"><a href="#fn10">10</a></sup><a name="ref10"></a></p>
-<h3 id="about">Features of VIs</h3>
+<h3 id="Features of VIs">Features of VIs</h3>
 <p>In the early 90s, researchers identified the five basic elements<sup class="superscript"><a href="#fn11">11</a></sup><a name="ref11"></a> of voice processing technologies:</p>
 
         <ol>
@@ -61,6 +61,7 @@
            <li><p><b>Voice synthesis:</b> the synthetic replication of voice signals to facilitate the transmission of information from machine to human.</li></p>
 <p> </p>
            <li><p><b>Speech recognition:</b> the extraction of information that is there in a voice signal to control the actions taken by the device in response to spoken commands.<sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a></li></p>
+           <li><p><b>Speaker recognition:</b> the identification of voice characteristics for speaker verification. This process ensures that the speaker is verified through their voice characteristics.</li></p>
            <li><p><b>Spoken language translation:</b>  On recognising the language the person is speaking in, the translation of a message from one language to another. Through this process, two individuals who do not speak the same language can communicate.<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a></li></p>
           <p> Voice output is of two distinct categories: pre-recorded speech and synthetic speech.<sup class="superscript"><a href="#fn14">14</a></sup><a name="ref14"></a> Pre-recorded speech is natural speech that is recorded and stored for future use. In contrast, synthetic speech employs natural language processing (NLP) for the automatic generation of appropriate natural-language responses or output in the form of written text.<sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a></p>
 <p> </p>
@@ -78,59 +79,51 @@
 </p>
 <p>Synthetic speech employs NLP for its characteristically high ‘segmental intelligibility’ – or its ability to understand each segment of speech. However, pre-recorded speech outputs tend to be preferred by all for their human voice and pronunciation characteristics. These characteristics exist on the condition that the pre-recorded speech maintains the delicate balance between natural prosody<sup class="superscript"><a href="#fn19">19</a></sup><a name="ref19"></a> and the recorded elements. Since it successfully maintains the quality of natural speech, the natural prosody of pre-recorded speech output is higher than that of synthetic speech.<sup class="superscript"><a href="#fn20">20</a></sup><a name="ref20"></a></p>
 
-<p> Without this characteristic, the interface would be subject to systemic fluctuations in acoustic signals.<sup class="superscript"><a href="#fn6">6</a></sup><a name="ref6"></a> This would lead to modifications in input conditions which would minimally degrade the performance of the interface.<sup class="superscript"><a href="#fn7">7</a></sup><a name="ref7"></a> Building standardised models, thereby, would enable individuals  to interact with VIs with high accuracy levels.<sup class="superscript"><a href="#fn8">8</a></sup><a name="ref8"></a></p>
-
-<h3 id="significant">Significant challenges for multilingual support</h3>
-<p> In an empirical study conducted by Dyches et al ,<sup class="superscript"><a href="#fn9">9</a></sup><a name="ref9"></a> 724 participants in Ohio were approached to assess the current state of the interactive voice response (IVR) system for non acute primary care. However, only 42% of the participants were able to finish the telephone screening. The rest were not able to complete the IVR process in the research for several reasons. One of the most significant reasons cited was not knowing English. Hence, developing a VI in all local, regional languages would be a step towards making digital spaces truly democratic.</p>
-<p> This idea, however, has not come to fruition because of the challenge involved in developing VIs in local languages. The major challenge is  further reflected in a W3Tech survey, as depicted in Graph 1, which reveals that English was used by 59.5% of approximately 10 million global websites as of June 2020.<sup class="superscript"><a href="#fn10">10</a></sup><a name="ref10"></a> The websites surveyed by W3Tech, however, include only websites that use technology and have “useful content”. To elaborate further, default web server pages and websites owned by domain spammers were excluded from the survey. In addition, subdomains and redirected domains were not included in the survey.</p>
-<p>The aforementioned statistics become even more significant when we consider global demographics – only 527 million people in the world, out of approximately 7.2 billion, are native English speaking people.<sup class="superscript"><a href="#fn11">11</a></sup><a name="ref11"></a> The population of native speakers<sup class="superscript"><a href="#fn12">12</a></sup><a name="ref12"></a> of three languages, namely, all Chinese dialects combined, Hindi, and Urdu is higher than the native English speaking population.<sup class="superscript"><a href="#fn13">13</a></sup><a name="ref13"></a> However, the use of these languages in website content in the two most populous countries namely China and India, are minuscule in terms of percentage. For China, it stands at 1.50%, while Hindi is behind at 0.1%. However, less than 0.1% of the 10 million (approximate value) websites surveyed accounted for using Indic languages such as Bengali, Kannada, Tamil, Telugu, Marathi, Punjabi, Gujarati, Oriya Urdu, and Assamese.<sup class="superscript"><a href="#fn14">14</a></sup><a name="ref14"></a></p>
-<p>Ultimately, to address language-related challenges, building an efficient VI equipped with multilingual support is the need of the hour. This requires the expertise of computational linguists to create the domain model –i.e., build the lexicon for NLU systems and fine-tune and debug the grammar for the same.<sup class="superscript"><a href="#fn15">15</a></sup><a name="ref15"></a> Another main challenge is that it remains an expensive procedure as it requires the labour of individuals with a very niche skill set.<sup class="superscript"><a href="#fn16">16</a></sup><a name="ref16"></a> Similarly, Levinson (1994) opines that the language accessibility barriers of VIs are predominantly compounded by the lack of technical expertise to create such devices. Though the recent trend of consumer facing VIs show that there is no dearth of technical expertise, the particular nature of voice and languages still create technological challenges.</p>
-<p>To summarise, the reluctance to develop VIs in several languages is primarily linked to the low scope for profitability and the labour-intensive requirement of computational linguists. In addition to these factors, several additional impediments have been identified for the development of interfaces in (non-dominant) local languages:</p>
-
-
-    <h3 id="voice">Voice initiatives to bridge the digital divide</h3>
-<p> Paul (2017) opines that a possible method to resolve the linguistic limitations of VIs, is to train the device employing a VI to associate particular sounds with words.<sup class="superscript"><a href="#fn42">42</a></sup><a name="ref42"></a> Training a machine to recognise sounds requires an extensive database of voice recordings on a wide variety of topics. The flexibility and accuracy of the VI are dependent on the number of voices and accents it is exposed to.<sup class="superscript"><a href="#fn43">43</a></sup><a name="ref43"></a> Presently, several eminent organisations, universities, and government bodies have undertaken the challenging task of creating such extensive voice databases:</p>
+<h3 id="Types of VIs">Types of VIs</h3>
+<p>A plethora of developers are creating VIs that can perform various functions, thereby giving a wide array of definitions to similar interfaces. Interactive voice response (IVR), voice channels, voice bots, and voice assistants are variations of voice-based customer service solutions.<sup class="superscript"><a href="#fn21">21</a></sup><a name="ref21"></a> Although these terms are sometimes used interchangeably, some authors opine that there are nuanced differences that set them apart.<sup class="superscript"><a href="#fn22">22</a></sup><a name="ref22"></a> </p>
+<h4 id="Interactive voice response (IVR)">Interactive voice response (IVR)</h4>
+<p>IVR systems are one of the oldest VIs in public use. These do not require a smartphone and are still used in several domains. Corkey and Parkinson (2002) define IVR as “a telephone interviewing technique in which the human speaker is replaced by a high-quality recorded interactive script to which the respondent provides answers by pressing the keys of a touch telephone (touch-phone).”<sup class="superscript"><a href="#fn23">23</a></sup><a name="ref23"></a> The recorded scripts used single voices,<sup class="superscript"><a href="#fn24">24</a></sup><a name="ref24"></a> combinations of male and female voices,<sup class="superscript"><a href="#fn25">25</a></sup><a name="ref25"></a> combinations of many female voices speaking in different languages,<sup class="superscript"><a href="#fn26">26</a></sup><a name="ref26"></a> or synthetic voices.<sup class="superscript"><a href="#fn27">27</a></sup><a name="ref27"></a></p>
+<h4 id="Chatbots">Chatbots</h4>
+<p>The terms voice bots, chatbots, and automated conversational interfaces are used synonymously. They are enhanced by AI, NLP, and machine learning.<sup class="superscript"><a href="#fn28">28</a></sup><a name="ref28"></a> The term ‘voice bot’ is shorthand for ‘voice robot’.<sup class="superscript"><a href="#fn29">29</a></sup><a name="ref29"></a> Here, voice is the primary medium of input.<sup class="superscript"><a href="#fn30">30</a></sup><a name="ref30"></a> They use automated speech recognition (ASR) technology to convert input into text. ‘Chatbot’ has a wider connotation, as it allows people to provide inputs in the form of text, gesture, touch, and voice. In this section, we use the term chatbot in the context of voice-enabled chatbots. The chatbot’s output may be in the form of written text or voice, for which it uses text-to-speech (TTS) technology.<sup class="superscript"><a href="#fn31">31</a></sup><a name="ref31"></a> Voice chatbots can be further classified into two major categories: task-oriented (declarative) chatbots and data-driven (predictive or conversational) chatbots.<sup class="superscript"><a href="#fn32">32</a></sup><a name="ref32"></a></p>
 <ol>
-   <li><p><b>Global initiatives </b> In an attempt to create a database to foster the growth of inclusive technologies, the Mozilla Foundation launched the Common Voice project in 2017.<sup class="superscript"><a href="#fn44">44</a></sup><a name="ref44"></a> To facilitate machine learning vis-a-vis VIs, developers require a large amount of voice data, which is usually expensive and resource-intensive to collect. Hence, Common Voice encourages people to donate their voice recording samples as well as verify other voice clips, thereby creating an accurate, open-source, and truly diverse database of voices.<sup class="superscript"><ahref="#fn45">45</a></sup><a name="ref45"></a> The project also recently initiated work on collecting single word segments, which aims to enable the machine to identify numbers (zero to nine) and the words ‘yes’, ‘no’, ‘hey’, and ‘Firefox’.<sup class="superscript"><a href="#fn46">46</a></sup><a name="ref46"></a>As of  July 2021, the Common Voice project had collected 13,905 hours of recordings in 76 different languages.sup class="superscript"><a href="#fn47">47</a></sup><a name="ref47"></a></li></p>
-    <p>The Linguistic Data Consortium (LDC) was conceptualised in 1992 to enhance technologies to support language-based academia.<sup class="superscript"><a href="#fn48">48</a></sup><a name="ref48"></a> LDC served as the leading language repository for educational institutions, corporations, and research institutes.<sup class="superscript"><a href="#fn49">49</a></sup><a name="ref49"></a> The repository was formed as a result of the LDC’s collaborations with researchers, who are instrumental in evaluating the voice data collection. LDC also has agreements with 40 organisations to create a general corpus. One of them is Microsoft Research India, which deals exclusively with Indian language tagsets.<sup class="superscript"><a href="#fn50">50</a></sup><a name="ref50"></a> A ‘tag’ refers to the “labels used to indicate the part of speech”, which also include the grammatical aspects of the language.<sup class="superscript"><a href="#fn51">51</a></sup><a name="ref51"></a> A ‘tagset’ is a collection of tags made by organisations such as Microsoft that deal with corpus creation.</p>
-<p> VoxForge is an open speech dataset that was set up to collect transcribed speech with Free and Open Source Speech Recognition Engines (on Linux, Windows, and Mac). <sup class="superscript"><a href="#fn52">52</a></sup><a name="ref52"></a> The submitted audio files have been made available under a General Public License (GPL) license and then compiled into acoustic models for use with Open Source speech recognition engines such as CMU Sphinx, ISIP, Julius (Github), and HTK.</p>
-<p>M-AILABS Speech Dataset is the first large dataset that is available free-of-charge and usable as training data for speech recognition and speech synthesis.<sup class="superscript"><a href="#fn53">53</a></sup><a name="ref53"></a> Most of the data is derived from LibriVox (which provides free public domain audiobooks) and Project Gutenberg (which provides free e-books). The training data consists of nearly a thousand hours of audio and text files in prepared formats </p>
-<p> </p>
-<p> </p>
-   <li><p><b> Initiatives for Indian languages </b> Speech recognition in VIs requires ‘robustness’.<sup class="superscript"><a href="#fn4">4</a></sup><a name="ref4"></a> A robust VI is characterised by having standardised models to recognise speech efficiently.<sup class="superscript"><a href="#fn5">5</a></sup><a name="ref5"></a></li></p>
-<p>The National Platform for Language Technology (NPLT) is a platform for colleges, researchers, and companies to provide access to Indian language data, tools, and related web services.<sup class="superscript"><a href="#fn54">54</a></sup><a name="ref54"></a> The NPLT acts as a marketplace of linguistic resources, tools and services developed by the government, start-ups, industries, and other stakeholders. The platform makes these resources available to interested entities, be it researchers, academicians, start-ups, or MNCs, for research and commercial purposes. It acts as a marketplace for Indian language data in both speech and text, with the aim of lending power to machine learning algorithms and improving the accuracy of models. NPLT also aims to provide a central point of “discoverability of Indian Language Data, technologies and services etc" to satisfy the data needs of both industry and academia.
-<p>Indic TTS is a joint initiative by the Government of India and 13 eminent Indian institutions. However, unlike Common Voice, which is a database for several languages across the world, Indic TTS focuses on 13 Indian languages. The special corpus consists of over 10,000 sentences and words spoken by both male and female speakers. The Indic TTS project also successfully launched an Android application for the TTS synthesis of 13 Indian languages. By utilising the unified parser, this application could recognise text input in 13 different Indian languages and render spoken output.</p>
-<p> </p>
-</ul>
-</p>
-<h3 id="future">Future of multilingual VIs</h3>
-<p> Lawrence hints that the Hindi language will be the next most represented language in speech technology. This is attributed to the fact that India is considered an emerging market economy. Similarly, large stakeholders in the digital economy, such as Google are working on the prediction that a large percentage of next-generation Indian internet users will be Hindi speakers as opposed to English speakers. Hence, Google is now taking measures to enhance its software user interfaces and products to cater to Hindi-speaking consumers. This step is incentivised by profits, but the silver lining is that it significantly addresses the ‘digital speech divide’ dilemma.</p>
+  <li><p><b>Task-oriented chatbots:</b>Task-oriented chatbots, also referred to as ‘linguistic-based’ or ‘rule-based’ chatbots, are devices that employ VIs that focus on a single purpose.<sup class="superscript"><a href="#fn33">33</a></sup><a name="ref33"></a> Due to this characteristic, they are considered to lack flexibility of functionality. They generate automated, conversational responses using NLP and logic. The functions of these chatbots are fairly limited, and hence they are used for specific purposes. A common example of these chatbots is interactive FAQs.</li></p>
+  <li><p><b>Data-driven chatbots:</b>Data-driven chatbots, also known as machine-learning or AI chatbots,<sup class="superscript"><a href="#fn34">34</a></sup><a name="ref34"></a> are enhanced with AI, NLP, NLU, and machine learning to deliver personalised and meaningful responses. They are considered more interactive and contextually aware than rule-based chatbots, as their functioning is more complex and predictive.<sup class="superscript"><a href="#fn35">35</a></sup><a name="ref35"></a></li></p>
+</ol>
+<p>This is because they learn the individual preferences and consequently create a profile of the person based on the data received. Some refer to these types of bots as ‘virtual assistants’.<sup class="superscript"><a href="#fn36">36</a></sup><a name="ref36"></a> However, other literature argues that these bots can be distinguished from virtual assistants.</p>
+<h4 id="Virtual assistants">Virtual assistants</h4>
+<p>According to scholars, there is no standardised definition of virtual personal assistants.<sup class="superscript"><a href="#fn37">37</a></sup><a name="ref37"></a> They list several names that other scholars have given to these systems, such as virtual assistants; vocal social agents or digital assistants; voice assistants; intelligent agents; and interactive personal assistants. Virtual assistants such as Siri use the speaker’s voice and content and process it to respond in different contexts, like tasks to be performed or an action directed towards the person.<sup class="superscript"><a href="#fn38">38</a></sup><a name="ref38"></a> Virtual assistants are now increasingly used in several areas of everyday life; some common names are Siri, Google Now, Microsoft Cortana, Amazon Echo, and Google Home. These assistants interact with people in a conversational manner, thereby providing them with a wide range of functionalities.<sup class="superscript"><a href="#fn39">39</a></sup><a name="ref39"></a></p>
+<p>The conundrum in using the terms ‘chatbot’ and ‘virtual assistant’ interchangeably comes from the lack of universally accepted definitions. Some opine that they come under the umbrella term ‘chatbots’, and, in specific, ‘data-driven chatbots’; the opposing view is that a virtual assistant is a completely different branch in the typology of VIs. These dissenting approaches come about because chatbots are characterised as data-obtaining interfaces.<sup class="superscript"><a href="#fn40">40</a></sup><a name="ref40"></a> In contrast, ‘virtual assistant’ is a distinct classification, as it is considered better than a chatbot with respect to understanding the context and the request, proficiency, nature of responses, and the rendering of a personalised experience.<sup class="superscript"><a href="#fn41">41</a></sup><a name="ref41"></a></p>
+<h3 id="future">The future of VIs</h3>
+<p>VIs are slowly becoming more accessible as they are being integrated into cheaper mobile phones. The next stage is the development of smart devices for homes that can work with voice assistants, such as Google Home and Amazon Echo. On the business side, voice bots could be used for more complex customer questions. Interestingly, researchers have now also built a prototype linked with Alexa, to provide farmers with a ‘smart irrigation voice assistant’.<sup class="superscript"><a href="#fn42">42</a></sup><a name="ref42"></a> Similarly, a voice application named ‘Avaaj Otalo’ was launched by UC Berkeley School of Information, Stanford HCI Group, IBM India Research Laboratory and Development Support Center (DSC), an NGO in Gujarat, to help farmers with agriculture-related queries.<sup class="superscript"><a href="#fn43">43</a></sup><a name="ref43"></a> Lastly, another significant use of VIs, according to Joshi and Patki (2015), is in increasing the safety of the computer system. Passwords set for systems via keyboards can be duplicated. However, when it comes to securing systems via VIs, duplication becomes far more difficult.<sup class="superscript"><a href="#fn44">44</a></sup><a name="ref44"></a></p>
 <h3 id="conclusion">Conclusion</h3>
-<p> Voice-based technologies have the potential to make the internet more accessible compared to purely text-based interfaces. What people can do with the internet  can be significantly increased and improved if they can communicate in their own language. However, the need for data and the ever-changing nature of languages and their contexts can be a challenge for interfaces in multiple languages. One can hope that the push towards more voice-based interfaces and the need for language data will bring in interest and funding towards the creation of language data corpora in more languages.</p>
+<p>The reduction in smartphone prices and data, as well as the increase in the functions that they can perform, have enabled the integration of VIs far more complex than IVR systems. One can hope that with further data and research, there will be an increase in not just their variety, but also in their ability to communicate with people who speak different languages.</p>
 
       </div>
       <div class="one wide column empty">
       </div>
       <div class="five wide column meta">
-        <p><span id="grey">Research and Writing by</span> <br />Deepika Nandagudi Srinivasa and Shweta Mohandas
+        <p><span id="grey">Research and Writing by</span> <br />Deepika Nandagudi Srinivasa <span id="grey">and</span> Shweta Mohandas
           <br />
         <span id="grey">Review and Editing by</span> <br /> Saumyaa Naidu, Puthiya Purayil Sneha, <br /><span id="grey">and</span> Pranav M.B <br />
         <span id="grey">Research Inputs by</span> <br />Sumandro Chattapadhyay<br />
 	       <br />
-        <a href="docs/MozVoice_PolicyBrief_02.pdf"><i class="fas fa-arrow-circle-down" style="color: black;" ></i> Download Voice Interfaces and Language
+        <a href="docs/MozVoice_LitSurvey_Evolution_01.pdf"><i class="fas fa-arrow-circle-down" style="color: black;" ></i> Download Voice Interfaces and Language Literature Survey
 </a></p>
         <br />
          <hr />
 	       <br />
         <p><span style="line-height: 3em;">CONTENTS</span></p>
-	      <p><a href="#about"><strong>Background</strong></a></p>
-        <p><a href="#significant"><strong>Significant challenges for multilingual support</strong></a></p>
-        <p><a href="#voice"><strong>Voice initiatives to bridge the digital divide</strong></a></p>
-        <p><a href="#future"><strong>Future of multilingual VIs </strong></a></p>
+	      <p><a href="#Background"><strong>Background</strong></a></p>
+        <p><a href="#Tracing the evolution of VIs"><strong>Tracing the evolution of VIs</strong></a></p>
+        <p><a href="#Features of VIs"><strong>Features of VIs</strong></a></p>
+        <p><a href="#Types of VIs"><strong>Types of VIs</strong></a></p>
+        <p><a href="#future"><strong>The future of VIs</strong></a></p>
         <p><a href="#conclusion"><strong>Conclusion</strong></a></p>
 
 </div>
-
+<div class="one wide column empty">
+</div>
+<div class="nine wide column text">
 <div class="ten wide column content">
 </div>
 <div class="ten wide column content">
@@ -138,272 +131,195 @@
 <h3>Notes</h3>
 <table class="footnote">
   <tr>
+              <td class="number">1</td>
+              <td class="reference"><a name="fn1"></a>Schnelle-Walka, D., “I Tell You Something,” <em> Proceedings of the 16th European Conference on Pattern Languages of Programs - EuroPLoP ’11, <em> 2011.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref1">&uarr;</a></span></td>
+          </tr>
 
-    <td class="number">1</td>
+          <tr>
+          <td class="number">2</td>
+<td class="reference"><a name="fn2"></a>Miller, L., “Natural Language Interfaces,” <em> Journal of the Washington Academy of Sciences 80, </em> no. 3 (1990): 91–115, accessed on 3 June 2020,<ahref="www.jstor.org/stable/24531256." target="_blank"> www.jstor.org/stable/24531256.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref2">&uarr;</a></span></td>
+          </tr>
 
-    <td class="reference"><a name="fn1"></a>“Voice Interfaces”, <em> Infosys </em>, 2019, accessed 3 November 2021<ahref="https://www.infosys.com/services/incubating-emerging-technologies/offerings/Documents/voice-interfaces.pdf."target="_blank">https://www.infosys.com/services/incubating-emerging-technologies/offerings/Documents/voice-interfaces.pdf.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref1">&uarr;</a></span></td>
-        	</tr>
+          <tr>
+                <td class="number">3</td>
+      <td class="reference"><a name="fn3"></a>Bhowmik, A. K., <em> Interactive Displays: Natural Human-Interface Technologies </em> (John Wiley & Sons, Incorporated, 2014).&nbsp;&nbsp;<span class="internal-nav"><a href="#ref3">&uarr;</a></span></td>
+            </tr>
 
-        	<tr>
-        	<td class="number">2</td>
-
-        	<td class="reference"><a name="fn2"></a>Rudnicky, A. I., “The Design of Voice-driven Interfaces”, In <em>Proceedings of the Workshop on Speech and Natural Language, </em>(Association for Computational Linguistics, USA, 1989), 120–124.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref2">&uarr;</a></span></td>
-        	</tr>
-
-      	<tr>
-        	<td class="number">3</td>
-  	<td class="reference"><a name="fn3"></a>Rudnicky, A. I., <em> “The Design of Voice-driven Interfaces”, </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref3">&uarr;</a></span></td>
-
-        	</tr>
-
-  	<tr>
-  <td class="number">4</td>
-  <td class="reference"><a name="fn4"></a>Cole, R., et al., “The Challenge of Spoken Language Systems: Research Directions for the Nineties”, <em>IEEE Transactions on Speech and Audio Processing, </em> 3, no. 1 (1995): 1–21.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref4">&uarr;</a></span></td>
-  	</tr>
-
-               <tr>
-  <td class="number">5</td>
-    <td class="reference"><a name="fn5"></a>Ayesha Pervaiz, et al., “Incorporating Noise Robustness in Speech Command Recognition by Noise Augmentation of Training Data”, <em> Sensors 20 </em>, no. 8 (2020): 2336–2337,<ahref="https://doi.org/10.3390/s20082326."target="_blank">https://doi.org/10.3390/s20082326.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref5">&uarr;</a></span></td>
-
-  	</tr>
-        	<tr>
-  <td class="number">6</td>
-  <td class="reference"><a name="fn6"></a>Cole, R., et al., “The Challenge of Spoken Language Systems: Research Directions for the Nineties”, <em>IEEE Transactions on Speech and Audio Processing, </em> 3, no. 1 (1995): 1–21.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref6">&uarr;</a></span></td>
-  	</tr>
-        	<tr>
-        	<td class="number">7</td>
-        	<td class="reference"><a name="fn7"></a>Cole, R., et al., “The Challenge of Spoken Language Systems: Research Directions for the Nineties”, <em>IEEE Transactions on Speech and Audio Processing, </em> 3, no. 1 (1995): 1–21.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref7">&uarr;</a></span></td>
-
-  	</tr>
-        	<tr>
-        	<td class="number">8</td>
-        		<td class="reference"><a name="fn8"></a>Rudnicky, A. I., <em> “The Design of Voice-driven Interfaces”, </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref8">&uarr;</a></span></td>
-
-        	</tr>
-               <tr>
-    	<td class="number">9</td>
-  <td class="reference"><a name="fn9"></a>Dyches, H., Alemagno, S., Llorens, S. A., and Butts, J. M., “Automated Telephone-Administered Substance Abuse Screening for Adults in Primary Care”, <em>Health Care Management Science, </em> 2, no. 4 (1999): 199–204 <a href="doi:10.1023/a:1019000231214." target="_blank">doi:10.1023/a:1019000231214.  </a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref9">&uarr;</a></span></td>
-
-      	</tr>
-          	<tr>
-  	<td class="number">10</td>
-  <td class="reference"><a name="fn10"></a>“Usage Statistics of Content Languages for Websites”, <em> W3Techs, </em> accessed 3 November 2021 <a href="https://w3techs.com/technologies/overview/content_language."target="_blank">https://w3techs.com/technologies/overview/content_language.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref10">&uarr;</a></span></td>
-  	</tr>
-                <tr>
-        	<td class="number">11</td>
-        	<td class="reference"><a name="fn11"></a>Noack, R., “The Future of Language”, <em> Washington Post, </em> September 25,2015,<a href="https://www.washingtonpost.com/news/worldviews/wp/2015/09/24/the-future-of-language/."target="_blank">https://www.washingtonpost.com/news/worldviews/wp/2015/09/24/the-future-of-language/."</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref11">&uarr;</a></span></td>
-
-        	</tr>
-        	<tr>
-        	<td class="number">12</td>
-
-     <td class="reference"><a name="fn12"></a>The terms ‘native language’ and ‘native speaker’ are used here in the specific context of the report cited. As socio-cultural constructs, the terms have been a source of debate, particularly in postcolonial contexts and in the field of linguistics, and more recently in efforts related to language revitalisation. For more on this see: Davies, Alan. The Native Speaker: Myth and Reality. Multilingual Matters, 2003 and  O’Rourke, Bernadette. “New Speakers of Minority Languages.” <em>The Routledge Handbook of Language Revitalization,</em> 2018, 265–73.<a href=" https://doi.org/10.4324/9781315561271-33."target="_blank">https://doi.org/10.4324/9781315561271-33.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref12">&uarr;</a></span></td>
-
-
-        	</tr>
-        	<tr>
-        	<td class="number">13</td>
-  	<td class="reference"><a name="fn13"></a>Noack, R., “The Future of Language ”, <em> Washington Post. </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref13">&uarr;</a></span></td>
-        	</tr>
-              <tr>
-  <td class="number">14</td>
-  <td class="reference"><a name="fn14"></a>Noack, R., “Usage Statistics of Content Languages for Websites”, <em> W3Techs, </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref14">&uarr;</a></span></td>
-
-
-  	</tr>
-    <tr>
-  <td class="number">15</td>
-  <td class="reference"><a name="fn15"></a>Cole,“The Challenge of Spoken Language Systems”, 1–21.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref15">&uarr;</a></span></td>
-        </tr>
-              <tr>
-  <td class="number">16</td>
-        	<td class="reference"><a name="fn16"></a>Cole,“The Challenge of Spoken Language Systems”, 1–21.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref16">&uarr;</a></span></td>
-
-        	</tr>
+            <tr>
+            <td class="number">4</td>
+     <td class="reference"><a name="fn4"></a>Carbone, C., “Audrey, Sibyl, and Alice in the Technical Information Libraries,” <em> STWP Review 9, </em> no. 1 (1962): 14–15, accessed on 19 June 2020, <a href="www.jstor.org/stable/43091178" target="_blank"> www.jstor.org/stable/43091178</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref4">&uarr;</a></span></td>
+            </tr>
   <tr>
-        	<td class="number">17</td>
-<td class="reference"><a name="fn17"></a>Freitas, J., et al., “Spoken Language Interface for Mobile Devices”,  in Human Language Technology. Challenges of the Information Society, </em> eds. Zygmunt Vetulani, Hans Uszkoreit (Springer, Berlin, Heidelberg, 2009), 25–35. &nbsp;&nbsp;<span class="internal-nav"><a href="#ref17">&uarr;</a></span></td>
-        	</tr>
+                <td class="number">5</td>
+               <td class="reference"><a name="fn5"></a>“IBM Shoebox,” <em> IBM Archives, </em> accessed on 2 November 2021 <a href="https://www.ibm.com/ibm/history/exhibits/specialprod1/specialprod1_7.html" target="_blank"> https://www.ibm.com/ibm/history/exhibits/specialprod1/specialprod1_7.html</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref5">&uarr;</a></span></td>
+
+            </tr>
+            <tr>
+            <td class="number">6</td>
+           <td class="reference"><a name="fn6"></a>IBM Archives, IBM Shoebox. Retrieved from<a href="https://www.ibm.com/ibm/history/exhibits/specialprod1/specialprod1_7.html" target="_blank"> https://www.ibm.com/ibm/history/exhibits/specialprod1/specialprod1_7.html</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref6">&uarr;</a></span></td>
+            </tr>
   <tr>
-        	<td class="number">18</td>
-  <td class="reference"><a name="fn18"></a>“RecognizedPhrase.Confidence Property”, Microsoft, accessed 17 November 2021,<a href=" https://docs.microsoft.com/en-us/dotnet/api/system.speech.recognition.recognizedphrase.confidence?view=netframework-4.8.target="_blank”>https://docs.microsoft.com/en-us/dotnet/api/system.speech.recognition.recognizedphrase.confidence?view=netframework-4.8.</a>&nbsp;&nbsp;<span class="internal-nav"><a href="#ref18">&uarr;</a></span></td>
-        	</tr>
+                <td class="number">7</td>
+            <td class="reference"><a name="fn7"></a>Tank, N., “Voice User Interface (VUI) – A Definition,” <em> Bot Society Blog, </em>2018,<a href="https://botsociety.io/blog/2018/04/voice-user-interface/" target="_blank">https://botsociety.io/blog/2018/04/voice-user-interface/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref7">&uarr;</a></span></td>
+            </tr>
+
+            <tr>
+            <td class="number">8</td>
+
+          <td class="reference"><a name="fn8"></a>“Consumer Intelligence Series: Prepare for the Voice Revolution,” <em> PwC Survey,</em>2018.<ahref="https://www.pwc.com/us/en/services/consulting/library/consumer-intelligence-series/voice-assistants.html" target="_blank">https://www.pwc.com/us/en/services/consulting/library/consumer-intelligence-series/voice-assistants.html</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref8">&uarr;</a></span></td>
+            </tr>
   <tr>
-            	<td class="number">19</td>
-              	<td class="reference"><a name="fn19"></a>Cole, “The Challenge of Spoken Language Systems”, 1–21.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref19">&uarr;</a></span></td>
-        	</tr>
-        	<tr>
-        	<td class="number">20</td>
-  	<td class="reference"><a name="fn20"></a>Cole, “The Challenge of Spoken Language Systems”, 1–21.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref20">&uarr;</a></span></td>
-        	</tr>
+                <td class="number">9</td>
+            <td class="reference"><a name="fn9"></a>Breen, A., et al., “Voice in the User Interface,” in <em> Interactive Displays: Natural Human-Interface Technologies, </em> ed. Bhowmik, A. K. (John Wiley & Sons, Incorporated, 2014): 107.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref9">&uarr;</a></span></td>
+            </tr>
+            <tr>
+            <td class="number">10</td>
+  <td class="reference"><a name="fn10"Lawrence, H. M. “Beyond the Graphic User Interface,” In Rhetorical Speculations: <em> The Future of Rhetoric, Writing, and Technology,</em>  ed. Sundvall, S., (Logan: University Press of Colorado, 2019). &nbsp;&nbsp;<span class="internal-nav"><a href="#ref10">&uarr;</a></span></td>
 
-      	<tr>
-        	<td class="number">21</td>
-  <td class="reference"><a name="fn21"></a>The Information Technology Act, 2000.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref21">&uarr;</a></span></td>
+            </tr>
+  <tr>
+                <td class="number">11</td>
+             <td class="reference"><a name="fn11"></a>Rabiner, L. R., “Voice Communication Between Humans and Machines –An Introduction,” in <em> Voice Communication Between Humans and Machines, </em> ed. D. B. Roa and J. G. Wilpon (The National Academies Press, 1994),<ahref="https://doi.org/10.17226/2308." target="_blank">https://doi.org/10.17226/2308.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref11">&uarr;</a></span></td>
+            </tr>
+            <tr>
+            <td class="number">12</td>
+  <td class="reference"><a name="fn12"></a>Rabiner, “Voice Communication between Humans and Machines.”&nbsp;&nbsp;<span class="internal-nav"><a href="#ref12">&uarr;</a></span></td>
 
-        	</tr>
-  	<tr>
-  <td class="number">22</td>
-  <td class="reference"><a name="fn22"></a>Hernandez, Daniela, “How Voice Recognition Systems Discriminate Against People with Accents: When Will There be Speech Recognition for the Rest of Us?”, <em> Splinter </em> , 21 August 2015,<a href="https://splinternews.com/how-voice-recognition-systems-discriminate-against-peop-1793850122."target="_blank">https://splinternews.com/how-voice-recognition-systems-discriminate-against-peop-1793850122.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref22">&uarr;</a></span></td>
-  	</tr>
-               <tr>
-  <td class="number">23</td>
-  <td class="reference"><a name="fn23"></a>Hernandez, “How Voice Recognition Systems” <em> Splinter </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref23">&uarr;</a></span></td>
-  	</tr>
-        	<tr>
-  <td class="number">24</td>
-  <td class="reference"><a name="fn24"></a>Hernandez, “How Voice Recognition Systems” <em> Splinter </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref24">&uarr;</a></span></td>
-  	</tr>
-        	<tr>
-  <td class="number">25</td>
-        	<td class="reference"><a name="fn25"></a>Hernandez, “How Voice Recognition Systems” <em> Splinter </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref25">&uarr;</a></span></td>
-        	</tr>
-        	<tr>
-        	<td class="number">26</td>
-        	<td class="reference"><a name="fn26"></a> Hernandez, “How Voice Recognition Systems” <em> Splinter </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref26">&uarr;</a></span></td>
+            </tr>
+  <tr>
+                <td class="number">13</td>
+            <td class="reference"><a name="fn13"></a>“Voice User Interfaces,” Interaction Design Foundation,<ahref="https://www.interaction-design.org/literature/topics voice-user-interfaces." target="_blank"> https://www.interaction-design.org/literature/topics voice-user-interfaces/a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref13">&uarr;</a></span></td>
+            </tr>
+            <tr>
+            <td class="number">14</td>
+            <td class="reference"><a name="fn14"></a>Candace Kamm, “User Interface for Voice Applications”,  in <em> Voice Communication Between Humans and Machines, </em> eds. David B. Roe and Jay G. Wilpon (The National Academies Press, 1995), 428-429.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref14">&uarr;</a></span></td>
+            </tr>
+  <tr>
+                <td class="number">15</td>
+                  <td class="reference"><a name="fn15"></a>Androutsopoulos, I., <em> Exploring Time, Tense and Aspect in Natural Language Database Interfaces, </em>(John Benjamins Publishing Company, 2002).&nbsp;&nbsp;<span class="internal-nav"><a href="#ref15">&uarr;</a></span></td>
+            </tr>
+            <tr>
+                    <td class="number">16</td>
+               <td class="reference"><a name="fn16"></a>“AI – Natural Language Processing”, <em> Tutorials Point </em> accessed on 11 November 2021,
+          <a href="https://www.tutorialspoint.com/artificial_intelligence/artificial_intelligence_natural_language_processing.html"target="_blank">https://www.tutorialspoint.com/artificial_intelligence/artificial_intelligence_natural_language_processing.html.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref16">&uarr;</a></span></td>
+                    </tr>
+                    <tr>
+              <td class="number">17</td>
+          <td class="reference"><a name="fn17"></a>“Chatbots: The Definitive Guide (2020)”, Artificial Solutions, 24 December, 2019, <a href="http://marketing.artificial-solutions.com/rs/177-TDV-970/images/Chatbots-the-definitive-guide-2020.pdf"target="_blank">http://marketing.artificial-solutions.com/rs/177-TDV-970/images/Chatbots-the-definitive-guide-2020.pdf</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref17">&uarr;</a></span></td>
+          </tr>
+          <tr>
+                   <td class="number">18</td>
+         <td class="reference"><a name="fn18"></a>“Chatbots: The Definitive Guide (2020)”, Artificial Solutions.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref18">&uarr;</a></span></td>
+                   </tr>
+                   <tr>
+              <td class="number">19</td>
+      <td class="reference"><a name="fn19"></a>Lauren Applebaum, et al. (2015) note that “Prosody, the intonation, rhythm, or ‘music’ of language, is an important aspect of all natural languages. Prosody can convey structural information that, at times, affects the meaning we take from a sentence.” In “Prosody In a Communication System Developed without a Language Model,” <em> Sign language and linguistics vol. 17, no. 2 </em> (2014): 181–212, <a href="doi:10.1075/sll.17.2.02app" target="_blank"> doi:10.1075/sll.17.2.02app.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref19">&uarr;</a></span></td>
+          </tr>
+          <tr>
+          <td class="number">20</td>
+          <td class="reference"><a name="fn20"></a>Kamm, “User Interface.”&nbsp;&nbsp;<span class="internal-nav"><a href="#ref20">&uarr;</a></span></td>
+          </tr>
+          <tr>
+              <td class="number">21</td>
+          <td class="reference"><a name="fn21"></a>Caile, C., “Keto or Atkins? IVR or Voice bots?” <em> Nuance, </em> 2019, accessed on 4 January 2022. <ahref="https://whatsnext.nuance.com/enterprise/voice-bots-and-ivr-similarities/"target="_blank">https://whatsnext.nuance.com/enterprise/voice-bots-and-ivr-similarities/ </a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref21">&uarr;</a></span></td>
+          </tr>
+       <tr>
+          <td class="number">22</td>
+   <td class="reference"><a name="fn22"></a>Ghanchi, J., “Chatbots vs Virtual Assistants: Right Solution for Customer Engagement,” <em> Medium, </em>22 October 2019, accessed on 4 January 2022. <a href="https://theconversation.com/amazon-echos-privacy-issues-go-way-beyond-voice-recordings-130016."target="_blank">https://theconversation.com/amazon-echos-privacy-issues-go-way-beyond-voice-recordings-130016.</a>; Joshi, N. (2018, December 23). “Yes, Chatbots and Virtual Assistants are Different!” <em>Forbes</em>, 23 December 2018, <a href="https://www.forbes.com/sites/cognitiveworld/2018/12/23/yes-chatbots-and-virtual-assistants-are-different/#6b41450b6d7"target="_blank">https://www.forbes.com/sites/cognitiveworld/2018/12/23/yes-chatbots-and-virtual-assistants-are-different/#6b41450b6d7</a>&nbsp;&nbsp;<span class="internal-nav"><a href="#ref23">&uarr;</a></span></td>
 
-        	</tr>
-               <tr>
-    	<td class="number">27</td>
-  <td class="reference"><a name="fn27"></a> Hernandez, “How Voice Recognition Systems” <em> Splinter </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref27">&uarr;</a></span></td>
-      	</tr>
-          	<tr>
-  	<td class="number">28</td>
-  <td class="reference"><a name="fn28"></a> Hernandez, “How Voice Recognition Systems” <em> Splinter </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref28">&uarr;</a></span></td>
-  	</tr>
-                <tr>
-        	<td class="number">29</td>
-        	<td class="reference"><a name="fn29"></a> Hernandez, “How Voice Recognition Systems” <em> Splinter </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref29">&uarr;</a></span></td>
-     	</tr>
-        	<tr>
-        	<td class="number">30</td>
-  <td class="reference"><a name="fn30"></a>Walkley, A. and Nagpal, J. “Why Hindi Matters in the Digital Age”,  <em> Think with Google, </em> 2015, from<ahref=”https://www.thinkwithgoogle.com/intl/en-apac/trends-and-insights/hindi-matters-digital-age/.”target="_blank”>https://www.thinkwithgoogle.com/intl/en-apac/trends-and-insights/hindi-matters-digital-age/.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref31">&uarr;</a></span></td>
-        	      	<tr>
-        	<td class="number">31</td>
-  <td class="reference"><a name="fn31"></a>Sanchez-Stockhammer, Christina, “Hybridization in Language”, In <em> Conceptualizing Cultural Hybridization: A Transdisciplinary Approach, </em> ed. Philipp Wolfgang Stockhammer, (Springer-Verlag Berlin Heidelberg, 2012), 133-157.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref31">&uarr;</a></span></td>
-        	</tr>
-              <tr>
-  <td class="number">32</td>
-  <td class="reference"><a name="fn32"></a>Baker, S., “Will We all be Speaking Hinglish One Day?”, <em> British Council, </em> 2015, accessed 3 November 2021 <ahref=”https://www.britishcouncil.org/voices-magazine/will-we-all-be-speaking-hinglish-one-day”target="_blank”>https://www.britishcouncil.org/voices-magazine/will-we-all-be-speaking-hinglish-one-day</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref32">&uarr;</a></span></td>
+          </tr>
+<tr>
+              <td class="number">23</td>
+          <td class="reference"><a name="fn23"></a>Corkrey, R., Parkinson, L., “Interactive Voice Response: Review of Studies 1989–2000,” <em>Behaviour Research Methods, Instruments, & Computers </em>34 (2002): 342–353, <a href="https://doi.org/10.3758/BF03195462”target="_blank">https://doi.org/10.3758/BF03195462.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref23">&uarr;</a></span></td>
+          </tr>
+          <tr>
+          <td class="number">24</td>
 
-  	</tr>
-              <tr>
+<td class="reference"><a name="fn24"></a>Piette, J. D., Weinberger, M., and McPhee, S. J., “The Effect of Automated Calls with Telephone Nurse Follow-Up on Patient-Centered Outcomes of Diabetes Care: A Randomised, Controlled Trial,” <em> Medical Care </em> 38 (2000): 218–230.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref24">&uarr;</a></span></td>
+          </tr>
+<tr>
+              <td class="number">25</td>
+          <td class="reference"><a name="fn25"></a>Baer, L., Jacobs, D. G., Cukor, P., O’Laughlen, J., Coyle, J. T., and Magruder, K. M., “Automated Telephone Screening Survey for Depression,” <em>Journal of the American Medical Association, </em>273 (1995): 1943–1944.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref25">&uarr;</a></span></td>
+          </tr>
+          <tr>
+          <td class="number">26</td>
+          <td class="reference"><a name="fn26"></a>Tanke, E. D., and Leirer, V. O., “Automated Telephone Reminders in Tuberculosis Care,” <em> Medical Care </em>32 (1994): 380–389.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref26">&uarr;</a></span></td>
+          </tr>
+<tr>
+              <td class="number">27</td>
+          <td class="reference"><a name="fn27"></a>Meneghini, L. F., Albisser, A. M., Goldberg, R. B., and Mintz, D. H., “An Electronic Case Manager for Diabetes Control,” <em>Diabetes Care </em>21 (1998): 591–596.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref27">&uarr;</a></span></td>
+          </tr>
+          <tr>
+          <td class="number">28</td>
+   <td class="reference"><a name="fn28"></a>“Chatbots: The Definitive Guide (2020)”, <em>Artificial Solutions </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref28">&uarr;</a></span></td>
+          </tr>
+<tr>
+              <td class="number">29</td>
+          <td class="reference"><a name="fn29"></a>Middlebrook, S., and Muller, J. “Thoughts on Bots: The Emerging Law of Electronic Agents,” <em> The Business Lawyer </em>56, no. 1(2000): 341–373, accessed on 12 June 2020, <a href="www.jstor.org/stable/40687980" target="_blank"> www.jstor.org/stable/40687980</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref29">&uarr;</a></span></td>
+          </tr>
+          <tr>
+          <td class="number">30</td>
+      <td class="reference"><a name="fn30"></a>“Chatbots: The Definitive Guide (2020)”, <em> Artificial Solutions.</em> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref30">&uarr;</a></span></td>
+
+          </tr>
+<tr>
+              <td class="number">31</td>
+              <td class="reference"><a name="fn31"></a>“Chatbots: The Definitive Guide (2020)”, <em> Artificial Solutions.</em> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref31">&uarr;</a></span></td>
+          </tr>
+<tr>
+          <td class="number">32</td>
+          <td class="reference"><a name="fn32"></a>“What Is a Chatbot?”, <em> Oracle,</em>  accessed on 21 June 2020, <a href="https://www.oracle.com/solutions/chatbots/what-is-a-chatbot/" target="_blank">  https://www.oracle.com/solutions/chatbots/what-is-a-chatbot/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref32">&uarr;</a></span></td>
+          </tr>
+<tr>
   <td class="number">33</td>
+  <td class="reference"><a name="fn33"></a>“Chatbots: The Definitive Guide (2020)”, <em> Artificial Solutions.</em> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref33">&uarr;</a></span></td>
+          </tr>
+          <tr>
+            <td class="number">34</td>
+            <td class="reference"><a name="fn34"></a>“Chatbots: The Definitive Guide (2020)”, <em> Artificial Solutions.</em> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref34">&uarr;</a></span></td>
 
-  	<td class="reference"><a name="fn33"></a>Lawrence, “Beyond the Graphic User Interface”.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref33">&uarr;</a></span></td>
+          </tr>
+<tr>
+  <td class="number">35</td>
+  <td class="reference"><a name="fn35"></a>“Chatbots: The Definitive Guide (2020)”, <em> Artificial Solutions.</em> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref35">&uarr;</a></span></td>
+          </tr>
+          <tr>
+            <td class="number">36</td>
+            <td class="reference"><a name="fn36"></a>“Chatbots: The Definitive Guide (2020)”, <em> Artificial Solutions.</em> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref36">&uarr;</a></span></td>
 
-        </tr>
-              <tr>
-  <td class="number">34</td>
-        	<td class="reference"><a name="fn34"></a>Skiba, R., “Code switching as a Countenance of Language Interference”, <em> The Internet TESL Journal, </em> 3, no. 10 (1997): 1–6.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref33">&uarr;</a></span></td>
-        	</tr>
-  <tr>
-        	<td class="number">35</td>
-  <td class="reference"><a name="fn35"></a>Crystal, D. The Cambridge <em> Encyclopedia of Language, </em> (Cambridge University Press, 1987), 372-375.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref35">&uarr;</a></span></td>
-         	</tr>
-  <tr>
-        	<td class="number">36</td>
-  <td class="reference"><a name="fn36"></a>“The Challenge of Spoken Language”, 1–21.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref36">&uarr;</a></span></td>
-        	</tr>
-  <tr>
-        	<td class="number">37</td>
-  <td class="reference"><a name="fn37"></a>Martin, R., “Common Voice Languages and Accent Strategy v5”, <em> Mozilla, </em> 2020, accessed 3 November 2021,<ahref=”https://discourse.mozilla.org/t/common-voice-languages-and-accent-strategy-v5/56555”target="_blank”>,https://discourse.mozilla.org/t/common-voice-languages-and-accent-strategy-v5/56555</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref37">&uarr;</a></span></td>
-        	</tr>
-  <tr>
-        	<td class="number">38</td>
-  <td class="reference"><a name="fn38"></a>McEvoy, J., “A Few Differences Between French Spoken in Québec and France”, <em> British Council, </em> 2017, accessed 3 November 2021<ahref=”https://www.britishcouncil.org/voices-magazine/few-differences-between-french-spoken-quebec-and-france target="_blank”>https://www.britishcouncil.org/voices-magazine/few-differences-between-french-spoken-quebec-and-france</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref38">&uarr;</a></span></td>
-        	</tr>
-  </tr>
-  <tr>
-        	<td class="number">39</td>
-  <td class="reference"><a name="fn39"></a>“Why Common Voice?”, <em> Common Voice, </em> <ahref=”https://commonvoice.mozilla.org/en/about”target="_blank”>https://commonvoice.mozilla.org/en/about</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref39">&uarr;</a></span></td>
+          </tr>
+<tr>
+          <td class="number">37</td>
 
-        	</tr>
-  <tr>
-        	<td class="number">40</td>
-  <td class="reference"><a name="fn40"></a>“Why Common Voice?”, <em> Common Voice. </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref40">&uarr;</a></span></td>
-
-        	</tr>
-  <tr>
-        	<td class="number">41</td>
-  <td class="reference"><a name="fn41"></a>Martin, R., “Common Voice Languages and Accent Strategy v5”, <em> Mozilla </em>. &nbsp;&nbsp;<span class="internal-nav"><a href="#ref41">&uarr;</a></span></td>
-        	</tr>
-  <tr>
-        	<td class="number">42</td>
-  <td class="reference"><a name="fn42"></a>Paul, S. “Voice Is the Next Big Platform, Unless You Have an Accent”, <em> Wired, </em> 2017,<ahref=”https://www.wired.com/2017/03/voice-is-the-next-big-platform-unless-you-have-an-accent/”target="_blank”>https://www.wired.com/2017/03/voice-is-the-next-big-platform-unless-you-have-an-accent/.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref42">&uarr;</a></span></td>
-  	</tr>
-  <tr>
-        	<td class="number">43</td>
-  <td class="reference"><a name="fn43"></a>Paul, S. “Voice Is the Next Big Platform, Unless You Have an Accent”, <em> Wired, </em>.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref43">&uarr;</a></span></td>
-
-        	</tr>
-
-
-  <tr>
-        	<td class="number">44</td>
-  <td class="reference"><a name="fn44"></a>Ali,“Why Common Voice?”, <em> Common Voice. </em> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref44">&uarr;</a></span></td>
-        	</tr>
-  <tr>
-        	<td class="number">45</td>
-  <td class="reference"><a name="fn45"></a>Ali,“Why Common Voice?”, <em> Common Voice. </em> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref45">&uarr;</a></span></td>
-  	</tr>
-  <tr>
-        	<td class="number">46</td>
-  <td class="reference"><a name="fn46"></a>Branson, M., “Help Create Common Voice’s First Target Segment”, <em> Mozilla, </em> 2020, accessed 3 November 2020<ahref=”https://discourse.mozilla.org/t/help-create-common-voices-first-target-segment/59587”target="_blank”>.https://discourse.mozilla.org/t/help-create-common-voices-first-target-segment/59587</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref46">&uarr;</a></span></td>
-  	</tr>
-  	</tr>
-  <tr>
-        	<td class="number">47</td>
-  <td class="reference"><a name="fn47"></a>Branson, M., “More Data, More Languages, and Introducing our First Target Segment!”, <em> Mozilla </em>, 2020, accessed 3 November 2021 <ahref=”https://discourse.mozilla.org/t/common-voice-dataset-release-mid-year-2020/62938”target="_blank”>https://discourse.mozilla.org/t/common-voice-dataset-release-mid-year-2020/62938</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref47">&uarr;</a></span></td>
-  	</tr>
-  <tr>
-        	<td class="number">48</td>
-  <td class="reference"><a name="fn48"></a>“Mission”, <em> Linguistic Data Consortium, </em>accessed 3 November 2021,<ahref=”https://www.ldc.upenn.edu/about/mission”target="_blank”> https://www.ldc.upenn.edu/about/mission</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref48">&uarr;</a></span></td>
-  	</tr>
-  <tr>
-        	<td class="number">49</td>
-  <td class="reference"><a name="fn49"></a>“About LDC”, <em> Linguistic Data Consortium, </em>accessed 3 November 2021,<ahref=”https://www.ldc.upenn.edu/about/”target="_blank”> https://www.ldc.upenn.edu/about/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref49">&uarr;</a></span></td>
-  	</tr>
-  <tr>
-        	<td class="number">50</td>
-  <td class="reference"><a name="fn50"></a>“Other Collaborations” <em> Linguistic Data Consortium, </em>accessed 3 November 2021,<ahref=”https://www.ldc.upenn.edu//collaborations/other”target="_blank”> https://www.ldc.upenn.edu/collaborations/other</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref50">&uarr;</a></span></td>
-  	</tr>
-
-  <tr>
-        	<td class="number">51</td>
-  <td class="reference"><a name="fn51"></a>“Tagset for Indian Languages”, <em> Sketch Engine, </em> accessed 3November2021<ahref=”https://www.sketchengine.eu/tagset-indian-languages/”target="_blank”>https://www.sketchengine.eu/tagset-indian-languages/</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref51">&uarr;</a></span></td>
-  	</tr>
-  <tr>
-        	<td class="number">52</td>
-  <td class="reference"><a name="fn52"></a>“VoxForge”, <em> VoxForge, </em><ahref=”http://www.voxforge.org/.”target="_blank”>http://www.voxforge.org/.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref52">&uarr;</a></span></td>
-  	</tr>
-  <tr>
-        	<td class="number">53</td>
-  <td class="reference"><a name="fn53"></a>“The M-AILABS Speech Dataset”, <em> Caito,</em> accessed 3 November 2021<ahref=”https://www.caito.de/2019/01/the-m-ailabs-speech-dataset/.“target="_blank”>https://www.caito.de/2019/01/the-m-ailabs-speech-dataset/.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref53">&uarr;</a></span></td>
-  	</tr>
-  <tr>
-        	<td class="number">54</td>
-  <td class="reference"><a name="fn54"></a>“About Us”, <em> National Platform for Language Technology </em> <ahref=”https://nplt.in/demo/about-nplt,”target="_blank”>https://nplt.in/demo/about-nplt,</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref54">&uarr;</a></span></td>
-  	</tr>
-  <tr>
-        	<td class="number">55</td>
-  <td class="reference"><a name="fn55"></a>“Voices”, <em> Indic TTS </em> <ahref=” https://www.iitm.ac.in/donlab/tts/voices.php“target="_blank”>https://www.iitm.ac.in/donlab/tts/voices.php</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref55">&uarr;</a></span></td>
-  	</tr>
-  <tr>
-        	<td class="number">56</td>
-  <td class="reference"><a name="fn56"></a>“Android Applications”, <em> Indic TTS </em> <ahref=”https://www.iitm.ac.in/donlab/tts/androidapp.php”target="_blank”>https://www.iitm.ac.in/donlab/tts/androidapp.php </a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref56">&uarr;</a></span></td>
-  	</tr>
-  <tr>
-        	<td class="number">57</td>
-  <td class="reference"><a name="fn57"></a>”Lawrence, “Beyond the Graphic User Interface”.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref57">&uarr;</a></span></td>
-  	</tr>
-  <tr>
-        	<td class="number">58</td>
-  <td class="reference"><a name="fn58"></a>Hernandez, “How Voice Recognition Systems” <em> Splinter </em>&nbsp;&nbsp;<span class="internal-nav"><a href="#ref58">&uarr;</a></span></td>
-
-
-
+<td class="reference"><a name="fn37"></a>Timo Strohmann, et al., “Virtual Moderation Assistance: Creating Design Guidelines for Virtual Assistants Supporting Creative Workshops”, <em> PACIS 2018 Proceedings, </em>no. 80 (2018), <a href="https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1079&context=pacis2018”target="_blank"> https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1079&context=pacis2018</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref37">&uarr;</a></span></td>
 </tr>
+          <tr>
+                    <td class="number">38</td>
+                    <td class="reference"><a name="fn38"></a>Sirbi, K., Patankar, A. J., “Personal Assistant with Voice Recognition Intelligence”, <em> International Journal of Engineering Research and Technology </em> 10, no. 1 (2017): 416–419.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref38">&uarr;</a></span></td>
+                    </tr>
+          <tr>
+                    <td class="number">39</td>
+                    <td class="reference"><a name="fn39"></a>Breen, et al, “Voice in the User Interface.”&nbsp;&nbsp;<span class="internal-nav"><a href="#ref39">&uarr;</a></span></td>
+                    </tr>
+                    <tr>
+                    <td class="number">40</td>
+          <td class="reference"><a name="fn40"></a>Ghanchi, “Chatbots vs Virtual Assistants.”&nbsp;&nbsp;<span class="internal-nav"><a href="#ref40">&uarr;</a></span></td>
+          <tr>
+                    <td class="number">41</td>
+                    <td class="reference"><a name="fn41"></a>Joshi, “Yes, Chatbots and Virtual Assistants Are Different!”&nbsp;&nbsp;<span class="internal-nav"><a href="#ref41">&uarr;</a></span></td>
+                    </tr>
+                    <tr>
+          <td class="number">42</td>
+<td class="reference"><a name="fn42"></a>Ramakrishnan, V., “How Mindmeld Is Used to Conserve Agricultural Water (... and Win Hackathons in the Process)”, 2019, accessed on 2 November 2021, <a href="https://www.mindmeld.com/20190828-how-mindmeld-is-used-to-conserve-agricultural-water.html"target="_blank">https://www.mindmeld.com/20190828-how-mindmeld-is-used-to-conserve-agricultural-water.html</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref42">&uarr;</a></span></td>
+        </tr>
+        <tr>
+<td class="number">43</td>
+<td class="reference"><a name="fn43"></a>Patel, N., et al., “Avaaj Otalo – A Field Study of an Interactive Voice Forum for Small Farmers in Rural India.” Conference on Human Factors in Computing Systems – Proceedings 2 (2010): 733–742,10.1145/1753326.1753434.&nbsp;&nbsp;<span class="internal-nav"><a href="#ref43">&uarr;</a></span></td>
+</tr>
+<tr>
+<td class="number">44</td>
+<td class="reference"><a name="fn44"></a>Joshi, P. and Patki, R., “Voice User Interface Using Hidden Markov Model for Word Formation,” <em> International Journal of Computer Science and Mobile Computing </em> 4, no. 3 (2015): 720-724, <a href="https://ijcsmc.com/docs/papers/March2015/V4I3201599a81.pdf."target="_blank">https://ijcsmc.com/docs/papers/March2015/V4I3201599a81.pdf.</a> &nbsp;&nbsp;<span class="internal-nav"><a href="#ref44">&uarr;</a></span></td>
+          </tr>
 </table>
     </div>
   </div>
@@ -414,6 +330,7 @@
 
     </div>
   </div>
+</div>
   <!-- Footer -->
   <div class="footer">
     <div class="ui container four column stackable grid">
